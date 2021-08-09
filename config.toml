@@ -1,0 +1,38 @@
+baseURL = 'https://zigmonthly.org/'
+languageCode = 'en-us'
+title = 'Zig monthly'
+theme = "cactus"
+
+[params]
+description = "_Curated Zig news brought to you by [@slimsag](https://github.com/slimsag) each month_"
+colortheme = "dark"
+css = ["css/custom.css"]
+mainSection = "letters"
+mainSectionTitle = "Past letters"
+showAllPostsOnHomePage = false
+postsOnHomePage = 5
+tagsOverview = false
+showProjectsList = false
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[[menu.main]]
+name = "Submit a project"
+url = "https://docs.google.com/forms/d/e/1FAIpQLScJEKosqYa2Mfh7MrZVZ3Krm-65LukUF_AZ4T3VQtTYbBbXtw/viewform"
+weight = 3
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 4
+
+[[menu.main]]
+name = "Support me"
+url = "https://github.com/sponsors/slimsag"
+weight = 4
+
+[[menu.main]]
+name = "Privacy matters"
+url = "/privacy"
+weight = 5

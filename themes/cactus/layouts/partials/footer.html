@@ -1,0 +1,14 @@
+<footer id="footer">
+  <div class="footer-left">
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0 licensed</a>
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        {{ range .Site.Menus.main }} 
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</footer>

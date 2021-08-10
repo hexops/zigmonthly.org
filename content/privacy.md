@@ -1,6 +1,7 @@
 ---
 title: "Privacy matters"
 draft: false
+rss_ignore: true
 ---
 
 Analytics should always be 100% anonymous, aggregated, open and public - otherwise it’s spying.

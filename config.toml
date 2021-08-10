@@ -13,9 +13,25 @@ showAllPostsOnHomePage = false
 postsOnHomePage = 5
 tagsOverview = false
 showProjectsList = false
+rss = true
+copyright = 'Creative Commons Attribution 4.0 International (CC BY 4.0)'
+languageCode = 'en-us'
+
+[author]
+name = 'slimsag'
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[[menu.main]]
+name = "RSS feed"
+url = "/index.xml"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 2
 
 [[menu.main]]
 name = "Submit a project"
@@ -23,16 +39,11 @@ url = "https://docs.google.com/forms/d/e/1FAIpQLScJEKosqYa2Mfh7MrZVZ3Krm-65LukUF
 weight = 3
 
 [[menu.main]]
-name = "About"
-url = "/about"
-weight = 4
-
-[[menu.main]]
-name = "Support me"
-url = "https://github.com/sponsors/slimsag"
-weight = 4
-
-[[menu.main]]
 name = "Privacy matters"
 url = "/privacy"
+weight = 4
+
+[[menu.main]]
+name = "Sponsor"
+url = "https://github.com/sponsors/slimsag"
 weight = 5

@@ -2,6 +2,8 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 <!-- TODO: gallery -->
   <div class="content" itemprop="articleBody">
+  <h1 style="margin-bottom: 0; font-size: 16px; text-align: center;">{{ index (split .Title ": ") 0 }}</h1>
+  <h1 style="margin-top: 0; font-size: 16px; text-align: center;">{{ index (split .Title ": ") 1 }}</h1>
   {{ if (eq .Type "search") }}
     <!-- TODO: search https://gohugo.io/tools/search/ -->
   {{ else }}

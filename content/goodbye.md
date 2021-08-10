@@ -1,6 +1,7 @@
 ---
 title: "Goodbye!"
 draft: false
+rss_ignore: true
 ---
 
 **You've been unsubscribed!**

@@ -9,6 +9,26 @@
     {{ block "main" . }}
     {{ end }}
 
+    {{ if eq .IsHome false}}
+      <section id="subscribe">
+        <h1>Subscribe</h1>
+        Enter your email to get one Zig newsletter per month (or use this <a href="/index.xml">RSS feed</a>):
+        <br>
+        <br>
+        <form
+          action="https://buttondown.email/api/emails/embed-subscribe/zigmonthly"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.email/zigmonthly', 'popupwindow')"
+          class="embeddable-buttondown-form"
+        >
+          <input type="email" name="email" id="bd-email" placeholder="example@domain.com" />
+          <input type="hidden" value="1" name="embed" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </section>
+      {{ end }}
+  
     {{ partial "footer.html" . }}
 
   </div>

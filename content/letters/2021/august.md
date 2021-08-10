@@ -31,7 +31,7 @@ Nearly matching up with [Zig's 6th birthday](https://twitter.com/andy_kelley/sta
 
 [@unvestigate](https://discord.com/channels/605571803288698900/605572611539206171/873274345160589392) in the Zig discord shared a video of their twin stick shooter they began building four days ago, with all gameplay code in Zig:
 
-<video width="480px" src="https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4" controls="controls" muted="muted"></video>
+[video](https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4) <video width="480px" src="https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4" controls="controls" muted="muted"></video>
 
 # Prometheus-style metrics for your Zig applications
 
@@ -53,7 +53,7 @@ I should note an [official Zig package manager is planned](https://github.com/zi
 
 [@captainhorst](https://discord.com/channels/605571803288698900/605572611539206171/873690060950761522) in Discord shared their recent project: a simple Karaoke player (note: video has no audio.)
 
-<video width="480px" src="https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4" controls="controls" muted="muted"></video>
+[video](https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4) <video width="480px" src="https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4" controls="controls" muted="muted"></video>
 
 # A path tracer
 
@@ -61,7 +61,7 @@ I should note an [official Zig package manager is planned](https://github.com/zi
 
 > "I’ve to admit I went in completely ‘blind’, didn’t know much about the language other than some passing remarks posted on Twitter. I kinda expected another Rust, so initially was a bit put off by how “Spartan” Zig was. After I adjusted and started taking it for what it was – a modern “C+” alternative – it actually became a very fun experiment."
 
-![](http://msinilo.pl/blog2/images/zigtrace.png)
+![](https://user-images.githubusercontent.com/3173176/128806390-0b93b3e1-9559-4a4a-85d1-440caec9bc96.png)
 
 # See also
 

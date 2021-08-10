@@ -11,7 +11,7 @@
 &lt;p>(Tree-sitter is a parsing framework from GitHub used for a variety of editors and IDEs, such as &lt;a href="https://neovim.io/doc/treesitter">NeoVim&lt;/a> and OniVim for code navigation and syntax highlighting. It&amp;rsquo;s also used by static analysis tools like &lt;a href="https://semgrep.dev">Semgrep&lt;/a> and powers GitHub&amp;rsquo;s code navigation features - so having an implementation for Zig could prove quite useful!)&lt;/p>
 &lt;h1 id="a-twin-stick-shooter">A twin stick shooter&lt;/h1>
 &lt;p>&lt;a href="https://discord.com/channels/605571803288698900/605572611539206171/873274345160589392">@unvestigate&lt;/a> in the Zig discord shared a video of their twin stick shooter they began building four days ago, with all gameplay code in Zig:&lt;/p>
-&lt;p>&lt;video width="480px" src="https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4" controls="controls" muted="muted">&lt;/video>&lt;/p>
+&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4">video&lt;/a> &lt;video width="480px" src="https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4" controls="controls" muted="muted">&lt;/video>&lt;/p>
 &lt;h1 id="prometheus-style-metrics-for-your-zig-applications">Prometheus-style metrics for your Zig applications&lt;/h1>
 &lt;p>&lt;a href="https://github.com/vrischmann">@vrischmann&lt;/a> released &lt;a href="https://github.com/vrischmann/zig-prometheus">a library&lt;/a> that enables one to add Prometheus-inspired counters, gauges, and histograms to their Zig applications - for use primarily with &lt;a href="https://github.com/VictoriaMetrics/VictoriaMetrics">VictoriaMetrics&lt;/a>, a Prometheus alternative.&lt;/p>
 &lt;h1 id="positron---a-web-renderer-frontend-for-zig-applications">Positron - a web renderer frontend for Zig applications&lt;/h1>
@@ -22,13 +22,13 @@
 &lt;p>I should note an &lt;a href="https://github.com/ziglang/zig/issues/943">official Zig package manager is planned&lt;/a>, but zigmod is an interesting project no less: releasing v67 this month, and with the project hitting over 500 commits and 3.6k lines of code, with a few handfuls of Zig dependencies.&lt;/p>
 &lt;h1 id="a-simple-karaoke-player">A simple Karaoke player&lt;/h1>
 &lt;p>&lt;a href="https://discord.com/channels/605571803288698900/605572611539206171/873690060950761522">@captainhorst&lt;/a> in Discord shared their recent project: a simple Karaoke player (note: video has no audio.)&lt;/p>
-&lt;p>&lt;video width="480px" src="https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4" controls="controls" muted="muted">&lt;/video>&lt;/p>
+&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4">video&lt;/a> &lt;video width="480px" src="https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4" controls="controls" muted="muted">&lt;/video>&lt;/p>
 &lt;h1 id="a-path-tracer">A path tracer&lt;/h1>
 &lt;p>&lt;a href="https://github.com/msinilo">@msinilo&lt;/a> shares &lt;a href="http://msinilo.pl/blog2/post/zig-pathtracer/">a detailed write-up&lt;/a> and their experience implementing a simple ray tracer in Zig - with no prior Zig experience!&lt;/p>
 &lt;blockquote>
 &lt;p>&amp;ldquo;I’ve to admit I went in completely ‘blind’, didn’t know much about the language other than some passing remarks posted on Twitter. I kinda expected another Rust, so initially was a bit put off by how “Spartan” Zig was. After I adjusted and started taking it for what it was – a modern “C+” alternative – it actually became a very fun experiment.&amp;rdquo;&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;img src="http://msinilo.pl/blog2/images/zigtrace.png" alt="">&lt;/p>
+&lt;p>&lt;img src="https://user-images.githubusercontent.com/3173176/128806390-0b93b3e1-9559-4a4a-85d1-440caec9bc96.png" alt="">&lt;/p>
 &lt;h1 id="see-also">See also&lt;/h1>
 &lt;ul>
 &lt;li>&lt;a href="https://corecursive.com/067-zig-with-andrew-kelley/">Full-Time Open Source With Andrew Kelley&lt;/a> (podcast, transcribed)&lt;/li>

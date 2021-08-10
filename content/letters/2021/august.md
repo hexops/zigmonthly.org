@@ -19,7 +19,7 @@ I'm looking for feedback about this approach to Zig monthly - what do you think?
 
 Nearly matching up with [Zig's 6th birthday](https://twitter.com/andy_kelley/status/1424163667306631168), [@kubkon](https://github.com/kubkon) (a core team member and author of Zig's MachO linker) has begun [adding minimal support for building iOS binaries with Zig, from any OS](https://github.com/ziglang/zig/pull/9532). Here's one running in the iOS emulator on a Mac:
 
-<a href="https://user-images.githubusercontent.com/3173176/128664203-c9c0954d-fe74-43aa-964d-458f0fe74565.png"><img width="200px" src="https://user-images.githubusercontent.com/3173176/128664203-c9c0954d-fe74-43aa-964d-458f0fe74565.png"></img></a>
+<a href="https://user-images.githubusercontent.com/3173176/128664203-c9c0954d-fe74-43aa-964d-458f0fe74565.png"><img width="480px" src="https://user-images.githubusercontent.com/3173176/128664203-c9c0954d-fe74-43aa-964d-458f0fe74565.png"></img></a>
 
 # Tree Sitter for Zig
 
@@ -31,7 +31,11 @@ Nearly matching up with [Zig's 6th birthday](https://twitter.com/andy_kelley/sta
 
 [@unvestigate](https://discord.com/channels/605571803288698900/605572611539206171/873274345160589392) in the Zig discord shared a video of their twin stick shooter they began building four days ago, with all gameplay code in Zig:
 
-[video](https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4) <video width="480px" src="https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4" controls="controls" muted="muted"></video>
+<video width="480px" src="https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4" controls="controls" muted="muted">
+    <a href="https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4">
+        <img width="480px" src="https://user-images.githubusercontent.com/3173176/128806787-a091b018-3881-46e2-804f-53ee8863cca2.png"></img>
+    </a>
+</video>
 
 # Prometheus-style metrics for your Zig applications
 
@@ -41,7 +45,7 @@ Nearly matching up with [Zig's 6th birthday](https://twitter.com/andy_kelley/sta
 
 [@MasterQ32](https://github.com/ziglibs/positron) has released Positron, a web renderer frontend for Zig applications. These Zig bindings to the popular [webview](https://github.com/webview/webview) library, enable one to write cross-platform HTML5 UI applications:
 
-<a href="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/i3-login.png"><img width="200px" src="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/i3-login.png"></img></a> <a href="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/windows-chat.png"><img width="200px" src="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/windows-chat.png"></img></a>
+<a href="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/i3-login.png"><img width="240px" src="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/i3-login.png"></img></a> <a href="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/windows-chat.png"><img width="240px" src="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/windows-chat.png"></img></a>
 
 # zigmod
 
@@ -53,7 +57,13 @@ I should note an [official Zig package manager is planned](https://github.com/zi
 
 [@captainhorst](https://discord.com/channels/605571803288698900/605572611539206171/873690060950761522) in Discord shared their recent project: a simple Karaoke player (note: video has no audio.)
 
-[video](https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4) <video width="480px" src="https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4" controls="controls" muted="muted"></video>
+[video](https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4)
+
+<video width="480px" src="https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4" controls="controls" muted="muted">
+    <a href="https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4">
+        <img width="480px" src="https://user-images.githubusercontent.com/3173176/128806923-49b0425e-b242-4230-87b5-08e0ffe14a53.png"></img>
+    </a>
+</video>
 
 # A path tracer
 

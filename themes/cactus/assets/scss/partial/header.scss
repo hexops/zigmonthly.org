@@ -1,7 +1,8 @@
 a[href^="https://"]::after {
   content:'↗';
 }
-a[href^="https://github.com/slimsag"]::after {
+a[href^="https://github.com/slimsag"]::after,
+a[href^="https://zigmonthly.org"]::after {
   content:'';
 }
 #header {

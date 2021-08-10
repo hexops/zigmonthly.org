@@ -2,13 +2,18 @@
 title: "Zig monthly, August 2021: iOS support, game videos, tree-sitter, a pathtracer, and more"
 date: 2021-08-01T03:00:00-07:00
 draft: false
+images: ["https://user-images.githubusercontent.com/3173176/128805441-9f809577-7182-475a-9916-f26b93ed1635.png"]
 ---
-
-**DRAFT:** If you're reading this, please don't share broadly yet :) I'm looking for feedback about this approach to Zig monthly - what do you think? What can I improve?
 
 # Announcing zigmonthly.org
 
 Today, I am launching zigmonthly.org: a once-a-month publication where I curate all things Zig that I’ve seen since the past month from the Zig Discord channels, <a href="https://zig.news">zig.news</a>, Twitter, Reddit, etc. and do my best to come up with a nice showcase. <a href="/about">Learn more</a>
+
+# DRAFT
+
+If you're reading this, please don't share this page broadly yet :)
+
+I'm looking for feedback about this approach to Zig monthly - what do you think? What can I improve? Let me know on the Zig SHOWTIME Discord in #main :)
 
 # Zig cross compiling to iOS? Yes please!
 

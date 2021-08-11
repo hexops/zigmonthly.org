@@ -17,13 +17,13 @@ Nearly matching up with [Zig's 6th birthday](https://twitter.com/andy_kelley/sta
 
 # Tree Sitter for Zig
 
-[@maxxnino](https://github.com/maxxnino) has released a [tree sitter](https://tree-sitter.github.io/tree-sitter/) parser for Zig.
+[@maxxnino](https://github.com/maxxnino) has released a [tree sitter parser for Zig](https://github.com/maxxnino/tree-sitter-zig).
 
-(Tree-sitter is a parsing framework from GitHub used for a variety of editors and IDEs, such as [NeoVim](https://neovim.io/doc/treesitter) and OniVim for code navigation and syntax highlighting. It's also used by static analysis tools like [Semgrep](https://semgrep.dev) and powers GitHub's code navigation features - so having an implementation for Zig could prove quite useful!)
+([Tree-sitter](https://tree-sitter.github.io/tree-sitter/) is a parsing framework from GitHub used for a variety of editors and IDEs, such as [NeoVim](https://neovim.io/doc/treesitter) and OniVim for code navigation and syntax highlighting. It's also used by static analysis tools like [Semgrep](https://semgrep.dev) and powers GitHub's code navigation features - so having an implementation for Zig could prove quite useful!)
 
 # A twin stick shooter
 
-[@unvestigate](https://discord.com/channels/605571803288698900/605572611539206171/873274345160589392) in the Zig discord shared a video of their twin stick shooter they began building four days ago, with all gameplay code in Zig:
+@unvestigate [shared in the Zig discord](https://discord.com/channels/605571803288698900/605572611539206171/873274345160589392) a video of their twin stick shooter they began building four days ago, with all gameplay code in Zig:
 
 <video width="480px" src="https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4" controls="controls" muted="muted">
     <a href="https://user-images.githubusercontent.com/3173176/128664622-b3f37ad2-56ba-47ba-bc53-4ee87893b009.mp4">
@@ -37,7 +37,7 @@ Nearly matching up with [Zig's 6th birthday](https://twitter.com/andy_kelley/sta
 
 # Positron - a web renderer frontend for Zig applications
 
-[@MasterQ32](https://github.com/ziglibs/positron) has released Positron, a web renderer frontend for Zig applications. These Zig bindings to the popular [webview](https://github.com/webview/webview) library, enable one to write cross-platform HTML5 UI applications:
+[@MasterQ32](https://github.com/MasterQ32) has released [Positron](https://github.com/ziglibs/positron), a web renderer frontend for Zig applications. These Zig bindings to the popular [webview](https://github.com/webview/webview) library, enable one to write cross-platform HTML5 UI applications:
 
 <a href="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/i3-login.png"><img width="240px" src="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/i3-login.png"></img></a> <a href="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/windows-chat.png"><img width="240px" src="https://raw.githubusercontent.com/ziglibs/positron/04af916ddf4dbdf5ae44ef754e1a5ff3af1ddef9/screenshots/windows-chat.png"></img></a>
 
@@ -49,7 +49,7 @@ I should also note an [official Zig package manager is planned](https://github.c
 
 # A simple Karaoke player
 
-[@captainhorst](https://discord.com/channels/605571803288698900/605572611539206171/873690060950761522) in Discord shared their recent project: a simple Karaoke player (note: video has no audio.)
+@captainhorst [shared in the Zig Discord](https://discord.com/channels/605571803288698900/605572611539206171/873690060950761522) their recent project: a simple Karaoke player (note: video has no audio.)
 
 [video](https://user-images.githubusercontent.com/3173176/128665375-276d55b5-3b46-4022-bf11-78043a498c04.mp4)
 

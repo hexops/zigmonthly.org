@@ -1,6 +1,6 @@
 ---
-title: "Zig monthly, August 2021: iOS support, game videos, tree-sitter, a pathtracer, and more"
-date: 2021-08-01T03:00:00-07:00
+title: "Zig monthly, August 2021: iOS support, tutorials, tree-sitter, a pathtracer, and more"
+date: 2021-09-01T03:00:00-07:00
 draft: false
 images: ["https://user-images.githubusercontent.com/3173176/128805441-9f809577-7182-475a-9916-f26b93ed1635.png"]
 ---
@@ -8,12 +8,6 @@ images: ["https://user-images.githubusercontent.com/3173176/128805441-9f809577-7
 # Announcing zigmonthly.org
 
 Today, I am launching zigmonthly.org: a once-a-month publication where I curate all things Zig that I’ve seen since the past month from the Zig Discord channels, <a href="https://zig.news">zig.news</a>, Twitter, Reddit, etc. and do my best to come up with a nice showcase. <a href="/about">Learn more</a>
-
-# DRAFT
-
-If you're reading this, please don't share this page broadly yet :)
-
-I'm looking for feedback about this approach to Zig monthly - what do you think? What can I improve? Let me know on the Zig SHOWTIME Discord in #main :)
 
 # Zig cross compiling to iOS? Yes please!
 
@@ -49,9 +43,9 @@ Nearly matching up with [Zig's 6th birthday](https://twitter.com/andy_kelley/sta
 
 # zigmod
 
-[@nektro](https://github.com/nektro) continues her work on [zigmod](https://github.com/nektro/zigmod), a package manager for the Zig programming language.
+[@nektro](https://github.com/nektro) continues her work on [zigmod](https://github.com/nektro/zigmod), a package manager for the Zig programming language - this month releasing v67 for various bug fixes. The project has now hit over 500 commits and 3.6k lines of code, when you add in the fact that zigmod uses a few handfuls of Zig dependencies - I think it's an interesting large Zig project.
 
-I should note an [official Zig package manager is planned](https://github.com/ziglang/zig/issues/943), but zigmod is an interesting project no less: releasing v67 this month, and with the project hitting over 500 commits and 3.6k lines of code, with a few handfuls of Zig dependencies.
+I should also note an [official Zig package manager is planned](https://github.com/ziglang/zig/issues/943).
 
 # A simple Karaoke player
 
@@ -72,6 +66,15 @@ I should note an [official Zig package manager is planned](https://github.com/zi
 > "I’ve to admit I went in completely ‘blind’, didn’t know much about the language other than some passing remarks posted on Twitter. I kinda expected another Rust, so initially was a bit put off by how “Spartan” Zig was. After I adjusted and started taking it for what it was – a modern “C+” alternative – it actually became a very fun experiment."
 
 ![](https://user-images.githubusercontent.com/3173176/128806390-0b93b3e1-9559-4a4a-85d1-440caec9bc96.png)
+
+# Tutorials
+
+[Loris Cro, VP of community at the Zig Software Foundation](https://kristoff.it) has been putting together multiple beginner tutorials over on https://zig.news:
+
+- [Where is print() in Zig?](https://zig.news/kristoff/where-is-print-in-zig-57e9)
+- [How to Add Buffering to a Reader / Writer in Zig](https://zig.news/kristoff/how-to-add-buffering-to-a-writer-reader-in-zig-7jd)
+- [What's a String Literal in Zig?](https://zig.news/kristoff/what-s-a-string-literal-in-zig-31e9)
+- [What's undefined in Zig?](https://zig.news/kristoff/what-s-undefined-in-zig-9h)
 
 # See also
 

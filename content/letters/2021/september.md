@@ -2,27 +2,48 @@
 title: "Zig monthly, September 2021: Unicode, Android, cross-platform GUIs, learning resources & more"
 date: 2021-10-25T00:00:00-07:00
 draft: false
-images: ["TODO"]
+images: ["https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png"]
 ---
 
-TODO: main article image, maybe "Ray tracing in a weekend" screenshot OR screenshot from Aetherwind
+<a href="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png"><img width="480px" src="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png"></img></a>
+
+
+# Slingworks & The Underburrow game
+
+> _Underburrow is a speed running platformer game where you gather momentum with well timed button taps_
+
+[@JonSnowbd shares _Slingworks 0.1_](https://github.com/JonSnowbd/slingworks): a simple and powerful Windows+Linux 'bring your content' engine built in Zig, as well as [Underburrow](https://github.com/JonSnowbd/underburrow): an all encompassing example for how Slingworks development works.
+
+<video width="480px" src="https://user-images.githubusercontent.com/3173176/134818362-4736ee45-1aa0-407c-92b0-c4a5b301d4d4.mp4" controls="controls" muted="muted">
+    <a href="https://user-images.githubusercontent.com/3173176/134818362-4736ee45-1aa0-407c-92b0-c4a5b301d4d4.mp4">
+        <img width="480px" src="https://user-images.githubusercontent.com/3173176/134818764-20d3f95c-090c-4000-8595-7e205247360e.png"></img>
+    </a>
+</video>
+
+Both are still heavily under development, but it's already quite cool:
+
+<a href="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png"><img width="240px" src="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png"></img></a> <a href="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png"><img width="240px" src="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png"></img></a>
+
+<a href="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png"><img width="240px" src="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png"></img></a> <a href="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png"><img width="240px" src="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png"></img></a>
+
+Check it out: [Slingworks](https://github.com/JonSnowbd/slingworks) | [Underburrow](https://github.com/JonSnowbd/underburrow)
 
 # Unicode
 
-Zig has, thus far, taken a lighter weight stance on Unicode - there are no native unicode types in the language and the standard library is light weight in terms of Unicode support.
+Unicode is complex: even in languages with excellent support for it such as Go (by creators as UTF-8 itself) there is still regular confusion and subtle bugs [lurking behind incorrect assumptions about what runes/code-points and grapheme clusters are.](https://www.reddit.com/r/golang/comments/o1o5hr/fyi_a_single_go_rune_is_not_the_same_as_a_single/).
 
-Unicode is a complex: even in languages such as Go (by the same creators as UTF-8 itself) there is still regular confusion and subtle bugs lurking behind [invalid assumptions about what runes/code-points and grapheme clusters actually are](https://www.reddit.com/r/golang/comments/o1o5hr/fyi_a_single_go_rune_is_not_the_same_as_a_single/). Most modern languages suffer from this foot-gun (with [Swift being perhaps the most notable _exception_](https://devlog.hexops.com/2021/unicode-sorting-why-browsers-added-special-emoji-matching#swifts-default-is-not-locale-aware-but-unicode-support-is-notable).)
+Zig has, thus far, taken a _lighter weight_ stance on Unicode: there are no native unicode types in the language, and the standard library is light weight in terms of Unicode support.
 
-People in the Zig community, myself included, care about Unicode support immensely, though. [@jecolon](https://github.com/jecolon) has been working tirelessly on two libraries:
+But many in the Zig community, myself included, care about Unicode support immensely - and [@jecolon](https://github.com/jecolon) has been working tirelessly on two libraries:
 
 * [Ziglyph](https://github.com/jecolon/ziglyph): Unicode text processing for the Zig Programming Language.
-* [Zigstr](https://github.com/jecolon/zigstr): A UTF-8 string type - which exposes primarily Grapheme clusters to avoid the mentioned foot-gun.
+* [Zigstr](https://github.com/jecolon/zigstr): A UTF-8 string type (which exposes Grapheme clusters instead of code points to avoid foot-guns.)
 
 As well as a series of articles:
 
-* [Part 1: Unicode basics in Zig](https://zig.news/dude_the_builder/unicode-basics-in-zig-dj3)
-* [Part 2: Ziglyph Unicode wrangling](https://zig.news/dude_the_builder/ziglyph-unicode-wrangling-llj)
-* [Part 3: Unicode string operations](https://zig.news/dude_the_builder/unicode-string-operations-536e)
+* [Unicode basics in Zig](https://zig.news/dude_the_builder/unicode-basics-in-zig-dj3)
+* [Ziglyph Unicode wrangling](https://zig.news/dude_the_builder/ziglyph-unicode-wrangling-llj)
+* [Unicode string operations](https://zig.news/dude_the_builder/unicode-string-operations-536e)
 
 [@andrewrk](https://github.com/andrewrk) and [@jecolon](https://github.com/jecolon) are also [working together](https://github.com/ziglang/zig/issues/234#issuecomment-922065852) to ensure Zig's `std.unicode` library is a reasonable API in general before Zig 1.0.
 
@@ -66,13 +87,11 @@ Rafael Batiati has shared a very interesting article: [IUP for Zig](https://zig.
 > 
 > https://github.com/lithdew/rheia/blob/master/hash_map.zig 
 
-# Slingworks engine & Underburrow game
+# Ray tracing in a weekend
 
-> _Underburrow is a speed running platformer game where you gather momentum with well timed button taps_
+[@Jack-Ji has implemented](https://github.com/Jack-Ji/ray-tracing-weekend.zig) the famous [ray-tracing-in-a-weekend](https://raytracing.github.io) in Zig:
 
-[@JonSnowbd shares _Slingworks 0.1_](https://github.com/JonSnowbd/slingworks): a simple and powerful Windows+Linux 'bring your content' engine built in Zig, as well as [Underburrow](https://github.com/JonSnowbd/underburrow): an all encompassing example for how Slingworks development works.
-
-TODO: 1-2 screenshots/videos/gifs from Aetherwind on Discord
+<a href="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png"><img width="480px" src="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png"></img></a>
 
 # Fast LRU cache
 
@@ -88,12 +107,6 @@ Also brought to us by [Kenta Iwasaki](https://github.com/lithdew):
 >
 > The code is available here w/ unit tests and benchmarks: https://github.com/lithdew/rheia/blob/master/lru.zig
 
-# Ray tracing in a weekend
-
-[@Jack-Ji has implemented](https://github.com/Jack-Ji/ray-tracing-weekend.zig) the famous [ray-tracing-in-a-weekend](https://raytracing.github.io) in Zig:
-
-<a href="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png"><img width="480px" src="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png"></img></a>
-
 # Exceptional articles
 
 * [Crafting an Interpreter in Zig](https://zig.news/andres/crafting-an-interpreter-in-zig-part-1-jdh) - Andres
@@ -104,13 +117,14 @@ Also brought to us by [Kenta Iwasaki](https://github.com/lithdew):
 * [Code coverage for Zig](https://zig.news/squeek502/code-coverage-for-zig-1dk1) - Ryan Liptak
 * [Resource efficient Thread Pools with Zig](https://zig.news/kprotty/resource-efficient-thread-pools-with-zig-3291) - Protty
 
-# Get started learning Zig
+# Learning Zig
 
 ![ziglings](https://user-images.githubusercontent.com/1458409/109398392-c1069500-790a-11eb-8ed4-7d7d74d32666.jpg)
 
 Now seems like an excellent time to point out two resources for anyone considering learning Zig:
 
 * [Ziglings](https://github.com/ratfactor/ziglings): a series of tiny broken programs. By fixing them, you'll learn how to read and write Zig code.
+* [ziglang.org/documentation/master](https://ziglang.org/documentation/master)
 * [ziglearn.org](https://ziglearn.org)
 
 # New Zig tutorials
@@ -148,10 +162,12 @@ Since [last month's beginner tutorials](https://zigmonthly.org/letters/2021/augu
 
 # Upcoming events
 
-[Handmade Seattle](https://www.handmade-seattle.com) has several people from the Zig community attending, as well as talks and demos for Zig. November 11-12, 2021.
+[Handmade Seattle](https://www.handmade-seattle.com) has several attendees from the Zig community, as well as talks and demos for Zig November 11-12, 2021.
 
 P.S. In case you missed it, [Zig 0.8.1 has been released](https://ziglang.org/download/0.8.1/release-notes.html)!
 
 ---
 
-Enjoying Zig monthly? Please consider [supporting my work](https://github.com/sponsors/slimsag)
+If you're one of the 150+ subscribers or [3.5k+ viewers](https://zigmonthly.org/privacy), thanks for reading!
+
+Please consider [supporting my work](https://github.com/sponsors/slimsag)

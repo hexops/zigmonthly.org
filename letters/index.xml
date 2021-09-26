@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Letters on Zig monthly</title><link>https://zigmonthly.org/letters/</link><description>Recent content in Letters on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 25 Sep 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/letters/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig monthly, September 2021: Unicode, Android, cross-platform GUIs, learning resources &amp; more</title><link>https://zigmonthly.org/letters/2021/september/</link><pubDate>Sat, 25 Sep 2021 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2021/september/</guid><description>&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png">&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png">&lt;/img>&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Letters on Zig monthly</title><link>https://zigmonthly.org/letters/</link><description>Recent content in Letters on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 25 Sep 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/letters/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig monthly, September 2021: Unicode, Android, cross-platform GUIs, learning resources &amp; more</title><link>https://zigmonthly.org/letters/2021/september/</link><pubDate>Sat, 25 Sep 2021 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2021/september/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png">&lt;/img>&lt;/a>&lt;/p>
 &lt;h1 id="slingworks--the-underburrow-game">Slingworks &amp;amp; The Underburrow game&lt;/h1>
 &lt;blockquote>
 &lt;p>&lt;em>Underburrow is a speed running platformer game where you gather momentum with well timed button taps&lt;/em>&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;a href="https://github.com/JonSnowbd/slingworks">@JonSnowbd shares &lt;em>Slingworks 0.1&lt;/em>&lt;/a>: a simple and powerful Windows+Linux &amp;lsquo;bring your content&amp;rsquo; engine built in Zig, as well as &lt;a href="https://github.com/JonSnowbd/underburrow">Underburrow&lt;/a>: an all encompassing example for how Slingworks development works.&lt;/p>
-&lt;video width="480px" src="https://user-images.githubusercontent.com/3173176/134818362-4736ee45-1aa0-407c-92b0-c4a5b301d4d4.mp4" controls="controls" muted="muted">
+&lt;video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/134818362-4736ee45-1aa0-407c-92b0-c4a5b301d4d4.mp4" controls="controls" muted="muted">
 &lt;a href="https://user-images.githubusercontent.com/3173176/134818362-4736ee45-1aa0-407c-92b0-c4a5b301d4d4.mp4">
-&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134818764-20d3f95c-090c-4000-8595-7e205247360e.png">&lt;/img>
+&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/134818764-20d3f95c-090c-4000-8595-7e205247360e.png">&lt;/img>
 &lt;/a>
 &lt;/video>
 &lt;p>Both are still heavily under development, but it&amp;rsquo;s already quite cool:&lt;/p>
-&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png">&lt;img width="240px" src="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png">&lt;/img>&lt;/a> &lt;a href="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png">&lt;img width="240px" src="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png">&lt;/img>&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png">&lt;img width="240px" src="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png">&lt;/img>&lt;/a> &lt;a href="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png">&lt;img width="240px" src="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png">&lt;img width="325px" src="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png">&lt;/img>&lt;/a> &lt;a href="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png">&lt;img width="325px" src="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png">&lt;img width="325px" src="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png">&lt;/img>&lt;/a> &lt;a href="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png">&lt;img width="325px" src="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png">&lt;/img>&lt;/a>&lt;/p>
 &lt;p>Check it out: &lt;a href="https://github.com/JonSnowbd/slingworks">Slingworks&lt;/a> | &lt;a href="https://github.com/JonSnowbd/underburrow">Underburrow&lt;/a>&lt;/p>
 &lt;h1 id="unicode">Unicode&lt;/h1>
 &lt;p>Unicode is complex: even in languages with excellent support for it such as Go (by creators as UTF-8 itself) there is still regular confusion and subtle bugs &lt;a href="https://www.reddit.com/r/golang/comments/o1o5hr/fyi_a_single_go_rune_is_not_the_same_as_a_single/">lurking behind incorrect assumptions about what runes/code-points and grapheme clusters are.&lt;/a>.&lt;/p>
@@ -31,9 +31,9 @@
 &lt;h1 id="android-support">Android support&lt;/h1>
 &lt;p>&lt;a href="https://github.com/MasterQ32/ZigAndroidTemplate">@MasterQ32 has created a Zig android template repository&lt;/a> - showing off how to create a minimal Android app in Zig.&lt;/p>
 &lt;p>Also see his earlier 2021 FOSDEM talk: &lt;a href="https://fosdem.org/2021/schedule/event/zig_android/">Create an Android Application with Zig&lt;/a> - I&amp;rsquo;ve included a short clip of the demo within for your enjoyment:&lt;/p>
-&lt;video width="480px" src="https://user-images.githubusercontent.com/3173176/134788433-811ce689-ed38-40d3-8fda-09f5364e9734.mov" controls="controls" muted="muted">
+&lt;video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/134788433-811ce689-ed38-40d3-8fda-09f5364e9734.mov" controls="controls" muted="muted">
 &lt;a href="https://user-images.githubusercontent.com/3173176/134788433-811ce689-ed38-40d3-8fda-09f5364e9734.mov">
-&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134788463-ee505626-01d0-435c-9f74-05b0483aee74.png">&lt;/img>
+&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/134788463-ee505626-01d0-435c-9f74-05b0483aee74.png">&lt;/img>
 &lt;/a>
 &lt;/video>
 &lt;p>Felix also has aspirations to do Zig-on-iOS work, so please &lt;a href="https://github.com/sponsors/MasterQ32">consider sponsoring him&lt;/a> for some Apple hardware if his work appeals to you!&lt;/p>
@@ -44,8 +44,8 @@
 &lt;blockquote>
 &lt;p>It&amp;rsquo;s a cross-platform GUI toolkit developed by PUC-RIO, the same university behind the excellent Lua language.&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png">&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png">&lt;/img>&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png">&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png">&lt;/img>&lt;/a>&lt;/p>
 &lt;h1 id="robinhood-hash-tables">Robinhood hash tables&lt;/h1>
 &lt;p>&lt;a href="https://github.com/lithdew">Kenta Iwasaki&lt;/a> shared their robin hash table implementation:&lt;/p>
 &lt;blockquote>
@@ -56,7 +56,7 @@
 &lt;/blockquote>
 &lt;h1 id="ray-tracing-in-a-weekend">Ray tracing in a weekend&lt;/h1>
 &lt;p>&lt;a href="https://github.com/Jack-Ji/ray-tracing-weekend.zig">@Jack-Ji has implemented&lt;/a> the famous &lt;a href="https://raytracing.github.io">ray-tracing-in-a-weekend&lt;/a> in Zig:&lt;/p>
-&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png">&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png">&lt;/img>&lt;/a>&lt;/p>
 &lt;h1 id="fast-lru-cache">Fast LRU cache&lt;/h1>
 &lt;p>Also brought to us by &lt;a href="https://github.com/lithdew">Kenta Iwasaki&lt;/a>:&lt;/p>
 &lt;blockquote>
@@ -80,7 +80,7 @@
 &lt;li>&lt;a href="https://zig.news/kprotty/resource-efficient-thread-pools-with-zig-3291">Resource efficient Thread Pools with Zig&lt;/a> - Protty&lt;/li>
 &lt;/ul>
 &lt;h1 id="learning-zig">Learning Zig&lt;/h1>
-&lt;p>&lt;img src="https://user-images.githubusercontent.com/1458409/109398392-c1069500-790a-11eb-8ed4-7d7d74d32666.jpg" alt="ziglings">&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/1458409/109398392-c1069500-790a-11eb-8ed4-7d7d74d32666.jpg">&lt;img width="650px" src="https://user-images.githubusercontent.com/1458409/109398392-c1069500-790a-11eb-8ed4-7d7d74d32666.jpg">&lt;/img>&lt;/a>&lt;/p>
 &lt;p>Now seems like an excellent time to point out two resources for anyone considering learning Zig:&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/ratfactor/ziglings">Ziglings&lt;/a>: a series of tiny broken programs. By fixing them, you&amp;rsquo;ll learn how to read and write Zig code.&lt;/li>

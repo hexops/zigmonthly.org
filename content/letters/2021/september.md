@@ -1,6 +1,6 @@
 ---
 title: "Zig monthly, September 2021: Unicode, Android, cross-platform GUIs, learning resources & more"
-date: 2021-10-24T00:00:00-07:00
+date: 2021-09-25T00:00:00-07:00
 draft: false
 images: ["https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png"]
 ---

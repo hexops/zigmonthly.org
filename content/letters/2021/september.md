@@ -1,67 +1,156 @@
 ---
-title: "Zig monthly, September 2021: TODO"
-date: 2021-10-29T00:00:00-07:00
+title: "Zig monthly, September 2021: Unicode, Android, cross-platform GUIs, learning resources & more"
+date: 2021-10-25T00:00:00-07:00
 draft: false
-images: ["https://user-images.githubusercontent.com/3173176/128805441-9f809577-7182-475a-9916-f26b93ed1635.png"]
+images: ["TODO"]
 ---
 
-TODO: main article image
+TODO: main article image, maybe "Ray tracing in a weekend" screenshot OR screenshot from Aetherwind
 
-# TODO - for consideration
-* Highlights:
-  * test C code with Zig https://twitter.com/TommiSinivuo/status/1432393016761856003
-  * android support https://twitter.com/ikskuh/status/1432717320732954624
-  * worth mentioning or nah? self-project https://twitter.com/lemire/status/1429466213537751045
-  * Aetherwind on Discord https://discord.com/channels/605571803288698900/634812978994085888/885689223691264011
-  * xq grid-based editor https://discord.com/channels/605571803288698900/634812978994085888/885276121300611123
-  * robinhood hash table: https://discord.com/channels/605571803288698900/605572611539206171/875057467904630835
-    > A robin hood hash table that keeps entries lexicographically sorted. Assumes that keys are 256-bit cryptographic hashes. Able to insert 25.8 million entries per second, query 30.83 million entries per second, and delete 24.21 million entries per second. Using it as one of the core main-memory data structures for a blockchain I'm writing in Zig called Rheia. Wrote and improved upon the data structure based on Twitter comments and articles made by Per Vognsen and Paul Khuong. Beats any other sorted data structure I've benchmarked so far in terms of insertion/query/deletion throughput by 3-4x order of magnitudes. https://github.com/lithdew/rheia/blob/master/hash_map.zig
-  * LRU cache https://discord.com/channels/605571803288698900/605572611539206171/875832055865442396
-  * real-time pathtracer https://discord.com/channels/605571803288698900/605572611539206171/875207278188462080
-    * screenshot: https://discord.com/channels/605571803288698900/605572611539206171/882107088824844318
-  * webassembly constellation map https://discord.com/channels/605571803288698900/605572611539206171/878813863234125835
-  * curl clone https://discord.com/channels/605571803288698900/605572611539206171/879967495396655104
-  * boids animation https://discord.com/channels/605571803288698900/605572611539206171/880161701943734323
-  * ray-tracing-in-a-weekend https://discord.com/channels/605571803288698900/605572611539206171/881273187042738258
-    * https://discord.com/channels/605571803288698900/605572611539206171/881578121697058827
-  * HTML parsing https://discord.com/channels/605571803288698900/605572611539206171/883020251900567622
-  * xxhash https://discord.com/channels/605571803288698900/605572611539206171/884981979848773672
-  * 
-* Tutorials:
-  * reminder about past tutorials - maybe aggregate them somewhere?
-  * https://twitter.com/rhamorim/status/1426224138016989185
-  * Experienced
-    * Series of articles on C/C++/Zig https://zig.news/kristoff/series/3:
-      * [Extend a C/C++ Project with Zig - Loris Cro](https://zig.news/kristoff/extend-a-c-c-project-with-zig-55di)
-      * [Make Zig Your C/C++ Build System - Loris Cro](https://zig.news/kristoff/make-zig-your-c-c-build-system-28g5)
-      * [Cross-compile a C/C++ Project with Zig - Loris Cro](https://zig.news/kristoff/cross-compile-a-c-c-project-with-zig-3599)
-      * [Compile a C/C++ Project with Zig - Loris Cro](https://zig.news/kristoff/compile-a-c-c-project-with-zig-368j)
-    * [Struct of Arrays (SoA) in Zig? Easy & in Userland! - Loris Cro](https://zig.news/kristoff/struct-of-arrays-soa-in-zig-easy-in-userland-40m0)
-    * [How to use hash map contexts to save memory when doing a string table - Andrew Kelley](https://zig.news/andrewrk/how-to-use-hash-map-contexts-to-save-memory-when-doing-a-string-table-3l33)
-    * [Crafting an Interpreter in Zig - 2 part series - Andres](https://zig.news/andres/crafting-an-interpreter-in-zig-part-1-jdh)
-  * Beginner
-    * [Interfaces in Zig - David Vanderson](https://zig.news/david_vanderson/interfaces-in-zig-o1c)
-    * [zig build explained - 2 part series - Felix "xq" Queißner](https://zig.news/xq/zig-build-explained-part-1-59lf)
-    * [What's undefined in Zig? - Loris Cro](https://zig.news/kristoff/what-s-undefined-in-zig-9h)
-    * [What's a String Literal in Zig? - Loris Cro](https://zig.news/kristoff/what-s-a-string-literal-in-zig-31e9)
-    * [How to Add Buffering to a Reader / Writer in Zig - Loris Cro](https://zig.news/kristoff/how-to-add-buffering-to-a-writer-reader-in-zig-7jd)
-* Podcasts/videos:
-  * reminder about past podcasts & videos - maybe aggregate them somewhere?
-  * https://www.youtube.com/channel/UCpaTqf90rm1jmJI49BtVMRw
-  * https://www.youtube.com/watch?v=_Jlikdtm4OA https://www.tigerbeetle.com/20k-challenge
+# Unicode
+
+Zig has, thus far, taken a lighter weight stance on Unicode - there are no native unicode types in the language and the standard library is light weight in terms of Unicode support.
+
+Unicode is a complex: even in languages such as Go (by the same creators as UTF-8 itself) there is still regular confusion and subtle bugs lurking behind [invalid assumptions about what runes/code-points and grapheme clusters actually are](https://www.reddit.com/r/golang/comments/o1o5hr/fyi_a_single_go_rune_is_not_the_same_as_a_single/). Most modern languages suffer from this foot-gun (with [Swift being perhaps the most notable _exception_](https://devlog.hexops.com/2021/unicode-sorting-why-browsers-added-special-emoji-matching#swifts-default-is-not-locale-aware-but-unicode-support-is-notable).)
+
+People in the Zig community, myself included, care about Unicode support immensely, though. [@jecolon](https://github.com/jecolon) has been working tirelessly on two libraries:
+
+* [Ziglyph](https://github.com/jecolon/ziglyph): Unicode text processing for the Zig Programming Language.
+* [Zigstr](https://github.com/jecolon/zigstr): A UTF-8 string type - which exposes primarily Grapheme clusters to avoid the mentioned foot-gun.
+
+As well as a series of articles:
+
+* [Part 1: Unicode basics in Zig](https://zig.news/dude_the_builder/unicode-basics-in-zig-dj3)
+* [Part 2: Ziglyph Unicode wrangling](https://zig.news/dude_the_builder/ziglyph-unicode-wrangling-llj)
+* [Part 3: Unicode string operations](https://zig.news/dude_the_builder/unicode-string-operations-536e)
+
+[@andrewrk](https://github.com/andrewrk) and [@jecolon](https://github.com/jecolon) are also [working together](https://github.com/ziglang/zig/issues/234#issuecomment-922065852) to ensure Zig's `std.unicode` library is a reasonable API in general before Zig 1.0.
+
+# Android support
+
+[@MasterQ32 has created a Zig android template repository](https://github.com/MasterQ32/ZigAndroidTemplate) - showing off how to create a minimal Android app in Zig.
+
+Also see his earlier 2021 FOSDEM talk: [Create an Android Application with Zig](https://fosdem.org/2021/schedule/event/zig_android/) - I've included a short clip of the demo within for your enjoyment:
+
+<video width="480px" src="https://user-images.githubusercontent.com/3173176/134788433-811ce689-ed38-40d3-8fda-09f5364e9734.mov" controls="controls" muted="muted">
+    <a href="https://user-images.githubusercontent.com/3173176/134788433-811ce689-ed38-40d3-8fda-09f5364e9734.mov">
+        <img width="480px" src="https://user-images.githubusercontent.com/3173176/134788463-ee505626-01d0-435c-9f74-05b0483aee74.png"></img>
+    </a>
+</video>
+
+Felix also has aspirations to do Zig-on-iOS work, so please [consider sponsoring him](https://github.com/sponsors/MasterQ32) for some Apple hardware if his work appeals to you!
+
+# Test your C code with Zig
+
+[@Pixeli](https://twitter.com/TommiSinivuo) on Twitter has shared an extremely cool topic: [how to easily test your existing C code using Zig](https://twitter.com/TommiSinivuo/status/1432393016761856003).
+
+# IUP (cross platform GUI) for Zig
+
+Rafael Batiati has shared a very interesting article: [IUP for Zig](https://zig.news/batiati/iup-for-zig-4ah):
+
+> It's a cross-platform GUI toolkit developed by PUC-RIO, the same university behind the excellent Lua language.
+
+<a href="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png"><img width="480px" src="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png"></img></a>
+
+<a href="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png"><img width="480px" src="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png"></img></a>
+
+# Robinhood hash tables
+
+[Kenta Iwasaki](https://github.com/lithdew) shared their robin hash table implementation:
+
+> A robin hood hash table that keeps entries lexicographically sorted. Assumes that keys are 256-bit cryptographic hashes. Able to insert 25.8 million entries per second, query 30.83 million entries per second, and delete 24.21 million entries per second.
+> 
+> Using it as one of the core main-memory data structures for a blockchain I'm writing in Zig called Rheia. Wrote and improved upon the data structure based on Twitter comments and articles made by Per Vognsen and Paul Khuong.
+> 
+> Beats any other sorted data structure I've benchmarked so far in terms of insertion/query/deletion throughput by 3-4x order of magnitudes.
+> 
+> https://github.com/lithdew/rheia/blob/master/hash_map.zig 
+
+# Slingworks engine & Underburrow game
+
+> _Underburrow is a speed running platformer game where you gather momentum with well timed button taps_
+
+[@JonSnowbd shares _Slingworks 0.1_](https://github.com/JonSnowbd/slingworks): a simple and powerful Windows+Linux 'bring your content' engine built in Zig, as well as [Underburrow](https://github.com/JonSnowbd/underburrow): an all encompassing example for how Slingworks development works.
+
+TODO: 1-2 screenshots/videos/gifs from Aetherwind on Discord
+
+# Fast LRU cache
+
+Also brought to us by [Kenta Iwasaki](https://github.com/lithdew):
+
+> Wrote a really fast LRU cache that is an amalgamation of both a robin hood hash table and a doubly-linked deque.
+> 
+> On my laptop, with a max load factor of 50%, roughly:
+> 
+> - 19.81 million entries can be upserted per second.
+> - 20.19 million entries can be queried per second.
+> - 9.97 million entries can be queried and removed per second.
+>
+> The code is available here w/ unit tests and benchmarks: https://github.com/lithdew/rheia/blob/master/lru.zig
+
+# Ray tracing in a weekend
+
+[@Jack-Ji has implemented](https://github.com/Jack-Ji/ray-tracing-weekend.zig) the famous [ray-tracing-in-a-weekend](https://raytracing.github.io) in Zig:
+
+<a href="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png"><img width="480px" src="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png"></img></a>
+
+# Exceptional articles
+
+* [Crafting an Interpreter in Zig](https://zig.news/andres/crafting-an-interpreter-in-zig-part-1-jdh) - Andres
+* [Zig build explained](https://zig.news/xq/zig-build-explained-part-1-59lf) - Felix "xq" Queißner
+* [Interfaces in Zig](https://zig.news/david_vanderson/interfaces-in-zig-o1c) - David Vanderson
+* [Struct of Arrays (SoA) in Zig? Easy & in Userland!](https://zig.news/kristoff/struct-of-arrays-soa-in-zig-easy-in-userland-40m0) - Loris Cro
+* [How to use hash map contexts to save memory when doing a string table](https://zig.news/andrewrk/how-to-use-hash-map-contexts-to-save-memory-when-doing-a-string-table-3l33) - Andrew Kelley
+* [Code coverage for Zig](https://zig.news/squeek502/code-coverage-for-zig-1dk1) - Ryan Liptak
+* [Resource efficient Thread Pools with Zig](https://zig.news/kprotty/resource-efficient-thread-pools-with-zig-3291) - Protty
+
+# Get started learning Zig
+
+![ziglings](https://user-images.githubusercontent.com/1458409/109398392-c1069500-790a-11eb-8ed4-7d7d74d32666.jpg)
+
+Now seems like an excellent time to point out two resources for anyone considering learning Zig:
+
+* [Ziglings](https://github.com/ratfactor/ziglings): a series of tiny broken programs. By fixing them, you'll learn how to read and write Zig code.
+* [ziglearn.org](https://ziglearn.org)
 
 # New Zig tutorials
 
-[Loris Cro, VP of community at the Zig Software Foundation](https://kristoff.it) has been putting together multiple beginner tutorials over on https://zig.news:
+Since [last month's beginner tutorials](https://zigmonthly.org/letters/2021/august/#tutorials), https://zig.news has blown up with awesome tutorials all around:
 
-- [Where is print() in Zig?](https://zig.news/kristoff/where-is-print-in-zig-57e9)
-- [How to Add Buffering to a Reader / Writer in Zig](https://zig.news/kristoff/how-to-add-buffering-to-a-writer-reader-in-zig-7jd)
-- [What's a String Literal in Zig?](https://zig.news/kristoff/what-s-a-string-literal-in-zig-31e9)
-- [What's undefined in Zig?](https://zig.news/kristoff/what-s-undefined-in-zig-9h)
+* Intro to Zig - Sobeston:
+  * [Fizz Buzz](https://zig.news/sobeston/fizz-buzz-3fao)
+  * [Fahrenheit to Celsius](https://zig.news/sobeston/fahrenheit-to-celsius-akf)
+  * [A guessing game](https://zig.news/sobeston/a-guessing-game-5fb1)
+* [What's undefined in Zig?](https://zig.news/kristoff/what-s-undefined-in-zig-9h) - Loris Cro
+* [What's a String Literal in Zig?](https://zig.news/kristoff/what-s-a-string-literal-in-zig-31e9) - Loris Cro
+* [How to Add Buffering to a Reader / Writer in Zig](https://zig.news/kristoff/how-to-add-buffering-to-a-writer-reader-in-zig-7jd) - Loris Cro
+* C/C++/Zig interoperability - Loris Cro
+  * [Extend a C/C++ Project with Zig](https://zig.news/kristoff/extend-a-c-c-project-with-zig-55di)
+  * [Make Zig Your C/C++ Build System](https://zig.news/kristoff/make-zig-your-c-c-build-system-28g5)
+  * [Cross-compile a C/C++ Project with Zig](https://zig.news/kristoff/cross-compile-a-c-c-project-with-zig-3599)
+  * [Compile a C/C++ Project with Zig](https://zig.news/kristoff/compile-a-c-c-project-with-zig-368j)
 
 # New podcasts & videos
 
+* [Zig ⚡ SHOWTIME #29: Don't Rewrite, Reinvent!](https://www.youtube.com/watch?v=tQHTvQqBhS8)
+* [CoffeeTIME: The ZSF is 1 year old!](https://youtu.be/QFOxAUjXe0g)
+* [CoffeeTIME: AWS ❤️ Rust](https://www.youtube.com/watch?v=1F5eprScpvA) - an insightful discussion about the relationship between AWS and Rust
+* Launching the [TigerBeetle $20,000 consensus challenge](https://www.tigerbeetle.com/20k-challenge), there was a 2.5 hour [Zig ⚡ SHOWTIME #28: Viewstamped Replication Made Famous](https://www.youtube.com/watch?v=_Jlikdtm4OA).
+* [Viewstamped Replication Made Famous - Joran Greef](https://www.youtube.com/watch?v=qeWyc8G-lq4)
+* [Revisiting Viewstamped Replication with Brian Oki and James Cowling](https://www.youtube.com/watch?v=ps106zjmjhw)
+* [Coderlyfe](https://www.youtube.com/channel/UCpaTqf90rm1jmJI49BtVMRw) has been steadily producing a series of Zig video tutorials if that's your cup of mocha:
+  * [Optionals](https://www.youtube.com/watch?v=4XrsIOkS5sY)
+  * [Blocks and closures](https://www.youtube.com/watch?v=hv71foOAPVk)
+  * [Errors / exception handling](https://www.youtube.com/watch?v=t9EUoSojDUw)
+  * [Allocators](https://www.youtube.com/watch?v=bS7jtl-CoEs)
+  * [Unions/variants](https://www.youtube.com/watch?v=JEHZJHfiAfk)
+  * [Structs and OOP](https://www.youtube.com/watch?v=NN1GC0E8J6I)
+
 # Upcoming events
+
+[Handmade Seattle](https://www.handmade-seattle.com) has several people from the Zig community attending, as well as talks and demos for Zig. November 11-12, 2021.
+
+P.S. In case you missed it, [Zig 0.8.1 has been released](https://ziglang.org/download/0.8.1/release-notes.html)!
 
 ---
 

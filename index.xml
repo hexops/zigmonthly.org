@@ -1,4 +1,139 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zig monthly</title><link>https://zigmonthly.org/</link><description>Recent content on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 01 Aug 2021 03:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig monthly, August 2021: iOS support, tutorials, tree-sitter, a pathtracer, and more</title><link>https://zigmonthly.org/letters/2021/august/</link><pubDate>Sun, 01 Aug 2021 03:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2021/august/</guid><description>&lt;h1 id="announcing-zigmonthlyorg">Announcing zigmonthly.org&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zig monthly</title><link>https://zigmonthly.org/</link><description>Recent content on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 25 Sep 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig monthly, September 2021: Unicode, Android, cross-platform GUIs, learning resources &amp; more</title><link>https://zigmonthly.org/letters/2021/september/</link><pubDate>Sat, 25 Sep 2021 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2021/september/</guid><description>&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png">&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="slingworks--the-underburrow-game">Slingworks &amp;amp; The Underburrow game&lt;/h1>
+&lt;blockquote>
+&lt;p>&lt;em>Underburrow is a speed running platformer game where you gather momentum with well timed button taps&lt;/em>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a href="https://github.com/JonSnowbd/slingworks">@JonSnowbd shares &lt;em>Slingworks 0.1&lt;/em>&lt;/a>: a simple and powerful Windows+Linux &amp;lsquo;bring your content&amp;rsquo; engine built in Zig, as well as &lt;a href="https://github.com/JonSnowbd/underburrow">Underburrow&lt;/a>: an all encompassing example for how Slingworks development works.&lt;/p>
+&lt;video width="480px" src="https://user-images.githubusercontent.com/3173176/134818362-4736ee45-1aa0-407c-92b0-c4a5b301d4d4.mp4" controls="controls" muted="muted">
+&lt;a href="https://user-images.githubusercontent.com/3173176/134818362-4736ee45-1aa0-407c-92b0-c4a5b301d4d4.mp4">
+&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134818764-20d3f95c-090c-4000-8595-7e205247360e.png">&lt;/img>
+&lt;/a>
+&lt;/video>
+&lt;p>Both are still heavily under development, but it&amp;rsquo;s already quite cool:&lt;/p>
+&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png">&lt;img width="240px" src="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png">&lt;/img>&lt;/a> &lt;a href="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png">&lt;img width="240px" src="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png">&lt;img width="240px" src="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png">&lt;/img>&lt;/a> &lt;a href="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png">&lt;img width="240px" src="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;p>Check it out: &lt;a href="https://github.com/JonSnowbd/slingworks">Slingworks&lt;/a> | &lt;a href="https://github.com/JonSnowbd/underburrow">Underburrow&lt;/a>&lt;/p>
+&lt;h1 id="unicode">Unicode&lt;/h1>
+&lt;p>Unicode is complex: even in languages with excellent support for it such as Go (by creators as UTF-8 itself) there is still regular confusion and subtle bugs &lt;a href="https://www.reddit.com/r/golang/comments/o1o5hr/fyi_a_single_go_rune_is_not_the_same_as_a_single/">lurking behind incorrect assumptions about what runes/code-points and grapheme clusters are.&lt;/a>.&lt;/p>
+&lt;p>Zig has, thus far, taken a &lt;em>lighter weight&lt;/em> stance on Unicode: there are no native unicode types in the language, and the standard library is light weight in terms of Unicode support.&lt;/p>
+&lt;p>But many in the Zig community, myself included, care about Unicode support immensely - and &lt;a href="https://github.com/jecolon">@jecolon&lt;/a> has been working tirelessly on two libraries:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/jecolon/ziglyph">Ziglyph&lt;/a>: Unicode text processing for the Zig Programming Language.&lt;/li>
+&lt;li>&lt;a href="https://github.com/jecolon/zigstr">Zigstr&lt;/a>: A UTF-8 string type (which exposes Grapheme clusters instead of code points to avoid foot-guns.)&lt;/li>
+&lt;/ul>
+&lt;p>As well as a series of articles:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://zig.news/dude_the_builder/unicode-basics-in-zig-dj3">Unicode basics in Zig&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zig.news/dude_the_builder/ziglyph-unicode-wrangling-llj">Ziglyph Unicode wrangling&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zig.news/dude_the_builder/unicode-string-operations-536e">Unicode string operations&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://github.com/andrewrk">@andrewrk&lt;/a> and &lt;a href="https://github.com/jecolon">@jecolon&lt;/a> are also &lt;a href="https://github.com/ziglang/zig/issues/234#issuecomment-922065852">working together&lt;/a> to ensure Zig&amp;rsquo;s &lt;code>std.unicode&lt;/code> library is a reasonable API in general before Zig 1.0.&lt;/p>
+&lt;h1 id="android-support">Android support&lt;/h1>
+&lt;p>&lt;a href="https://github.com/MasterQ32/ZigAndroidTemplate">@MasterQ32 has created a Zig android template repository&lt;/a> - showing off how to create a minimal Android app in Zig.&lt;/p>
+&lt;p>Also see his earlier 2021 FOSDEM talk: &lt;a href="https://fosdem.org/2021/schedule/event/zig_android/">Create an Android Application with Zig&lt;/a> - I&amp;rsquo;ve included a short clip of the demo within for your enjoyment:&lt;/p>
+&lt;video width="480px" src="https://user-images.githubusercontent.com/3173176/134788433-811ce689-ed38-40d3-8fda-09f5364e9734.mov" controls="controls" muted="muted">
+&lt;a href="https://user-images.githubusercontent.com/3173176/134788433-811ce689-ed38-40d3-8fda-09f5364e9734.mov">
+&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134788463-ee505626-01d0-435c-9f74-05b0483aee74.png">&lt;/img>
+&lt;/a>
+&lt;/video>
+&lt;p>Felix also has aspirations to do Zig-on-iOS work, so please &lt;a href="https://github.com/sponsors/MasterQ32">consider sponsoring him&lt;/a> for some Apple hardware if his work appeals to you!&lt;/p>
+&lt;h1 id="test-your-c-code-with-zig">Test your C code with Zig&lt;/h1>
+&lt;p>&lt;a href="https://twitter.com/TommiSinivuo">@Pixeli&lt;/a> on Twitter has shared an extremely cool topic: &lt;a href="https://twitter.com/TommiSinivuo/status/1432393016761856003">how to easily test your existing C code using Zig&lt;/a>.&lt;/p>
+&lt;h1 id="iup-cross-platform-gui-for-zig">IUP (cross platform GUI) for Zig&lt;/h1>
+&lt;p>Rafael Batiati has shared a very interesting article: &lt;a href="https://zig.news/batiati/iup-for-zig-4ah">IUP for Zig&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>It&amp;rsquo;s a cross-platform GUI toolkit developed by PUC-RIO, the same university behind the excellent Lua language.&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png">&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png">&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="robinhood-hash-tables">Robinhood hash tables&lt;/h1>
+&lt;p>&lt;a href="https://github.com/lithdew">Kenta Iwasaki&lt;/a> shared their robin hash table implementation:&lt;/p>
+&lt;blockquote>
+&lt;p>A robin hood hash table that keeps entries lexicographically sorted. Assumes that keys are 256-bit cryptographic hashes. Able to insert 25.8 million entries per second, query 30.83 million entries per second, and delete 24.21 million entries per second.&lt;/p>
+&lt;p>Using it as one of the core main-memory data structures for a blockchain I&amp;rsquo;m writing in Zig called Rheia. Wrote and improved upon the data structure based on Twitter comments and articles made by Per Vognsen and Paul Khuong.&lt;/p>
+&lt;p>Beats any other sorted data structure I&amp;rsquo;ve benchmarked so far in terms of insertion/query/deletion throughput by 3-4x order of magnitudes.&lt;/p>
+&lt;p>&lt;a href="https://github.com/lithdew/rheia/blob/master/hash_map.zig">https://github.com/lithdew/rheia/blob/master/hash_map.zig&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="ray-tracing-in-a-weekend">Ray tracing in a weekend&lt;/h1>
+&lt;p>&lt;a href="https://github.com/Jack-Ji/ray-tracing-weekend.zig">@Jack-Ji has implemented&lt;/a> the famous &lt;a href="https://raytracing.github.io">ray-tracing-in-a-weekend&lt;/a> in Zig:&lt;/p>
+&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png">&lt;img width="480px" src="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="fast-lru-cache">Fast LRU cache&lt;/h1>
+&lt;p>Also brought to us by &lt;a href="https://github.com/lithdew">Kenta Iwasaki&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>Wrote a really fast LRU cache that is an amalgamation of both a robin hood hash table and a doubly-linked deque.&lt;/p>
+&lt;p>On my laptop, with a max load factor of 50%, roughly:&lt;/p>
+&lt;ul>
+&lt;li>19.81 million entries can be upserted per second.&lt;/li>
+&lt;li>20.19 million entries can be queried per second.&lt;/li>
+&lt;li>9.97 million entries can be queried and removed per second.&lt;/li>
+&lt;/ul>
+&lt;p>The code is available here w/ unit tests and benchmarks: &lt;a href="https://github.com/lithdew/rheia/blob/master/lru.zig">https://github.com/lithdew/rheia/blob/master/lru.zig&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="exceptional-articles">Exceptional articles&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="https://zig.news/andres/crafting-an-interpreter-in-zig-part-1-jdh">Crafting an Interpreter in Zig&lt;/a> - Andres&lt;/li>
+&lt;li>&lt;a href="https://zig.news/xq/zig-build-explained-part-1-59lf">Zig build explained&lt;/a> - Felix &amp;ldquo;xq&amp;rdquo; Queißner&lt;/li>
+&lt;li>&lt;a href="https://zig.news/david_vanderson/interfaces-in-zig-o1c">Interfaces in Zig&lt;/a> - David Vanderson&lt;/li>
+&lt;li>&lt;a href="https://zig.news/kristoff/struct-of-arrays-soa-in-zig-easy-in-userland-40m0">Struct of Arrays (SoA) in Zig? Easy &amp;amp; in Userland!&lt;/a> - Loris Cro&lt;/li>
+&lt;li>&lt;a href="https://zig.news/andrewrk/how-to-use-hash-map-contexts-to-save-memory-when-doing-a-string-table-3l33">How to use hash map contexts to save memory when doing a string table&lt;/a> - Andrew Kelley&lt;/li>
+&lt;li>&lt;a href="https://zig.news/squeek502/code-coverage-for-zig-1dk1">Code coverage for Zig&lt;/a> - Ryan Liptak&lt;/li>
+&lt;li>&lt;a href="https://zig.news/kprotty/resource-efficient-thread-pools-with-zig-3291">Resource efficient Thread Pools with Zig&lt;/a> - Protty&lt;/li>
+&lt;/ul>
+&lt;h1 id="learning-zig">Learning Zig&lt;/h1>
+&lt;p>&lt;img src="https://user-images.githubusercontent.com/1458409/109398392-c1069500-790a-11eb-8ed4-7d7d74d32666.jpg" alt="ziglings">&lt;/p>
+&lt;p>Now seems like an excellent time to point out two resources for anyone considering learning Zig:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/ratfactor/ziglings">Ziglings&lt;/a>: a series of tiny broken programs. By fixing them, you&amp;rsquo;ll learn how to read and write Zig code.&lt;/li>
+&lt;li>&lt;a href="https://ziglang.org/documentation/master">ziglang.org/documentation/master&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://ziglearn.org">ziglearn.org&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h1 id="new-zig-tutorials">New Zig tutorials&lt;/h1>
+&lt;p>Since &lt;a href="https://zigmonthly.org/letters/2021/august/#tutorials">last month&amp;rsquo;s beginner tutorials&lt;/a>, &lt;a href="https://zig.news">https://zig.news&lt;/a> has blown up with awesome tutorials all around:&lt;/p>
+&lt;ul>
+&lt;li>Intro to Zig - Sobeston:
+&lt;ul>
+&lt;li>&lt;a href="https://zig.news/sobeston/fizz-buzz-3fao">Fizz Buzz&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zig.news/sobeston/fahrenheit-to-celsius-akf">Fahrenheit to Celsius&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zig.news/sobeston/a-guessing-game-5fb1">A guessing game&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://zig.news/kristoff/what-s-undefined-in-zig-9h">What&amp;rsquo;s undefined in Zig?&lt;/a> - Loris Cro&lt;/li>
+&lt;li>&lt;a href="https://zig.news/kristoff/what-s-a-string-literal-in-zig-31e9">What&amp;rsquo;s a String Literal in Zig?&lt;/a> - Loris Cro&lt;/li>
+&lt;li>&lt;a href="https://zig.news/kristoff/how-to-add-buffering-to-a-writer-reader-in-zig-7jd">How to Add Buffering to a Reader / Writer in Zig&lt;/a> - Loris Cro&lt;/li>
+&lt;li>C/C++/Zig interoperability - Loris Cro
+&lt;ul>
+&lt;li>&lt;a href="https://zig.news/kristoff/extend-a-c-c-project-with-zig-55di">Extend a C/C++ Project with Zig&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zig.news/kristoff/make-zig-your-c-c-build-system-28g5">Make Zig Your C/C++ Build System&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zig.news/kristoff/cross-compile-a-c-c-project-with-zig-3599">Cross-compile a C/C++ Project with Zig&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zig.news/kristoff/compile-a-c-c-project-with-zig-368j">Compile a C/C++ Project with Zig&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="new-podcasts--videos">New podcasts &amp;amp; videos&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=tQHTvQqBhS8">Zig ⚡ SHOWTIME #29: Don&amp;rsquo;t Rewrite, Reinvent!&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://youtu.be/QFOxAUjXe0g">CoffeeTIME: The ZSF is 1 year old!&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=1F5eprScpvA">CoffeeTIME: AWS ❤️ Rust&lt;/a> - an insightful discussion about the relationship between AWS and Rust&lt;/li>
+&lt;li>Launching the &lt;a href="https://www.tigerbeetle.com/20k-challenge">TigerBeetle $20,000 consensus challenge&lt;/a>, there was a 2.5 hour &lt;a href="https://www.youtube.com/watch?v=_Jlikdtm4OA">Zig ⚡ SHOWTIME #28: Viewstamped Replication Made Famous&lt;/a>.&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=qeWyc8G-lq4">Viewstamped Replication Made Famous - Joran Greef&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=ps106zjmjhw">Revisiting Viewstamped Replication with Brian Oki and James Cowling&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/channel/UCpaTqf90rm1jmJI49BtVMRw">Coderlyfe&lt;/a> has been steadily producing a series of Zig video tutorials if that&amp;rsquo;s your cup of mocha:
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=4XrsIOkS5sY">Optionals&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=hv71foOAPVk">Blocks and closures&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=t9EUoSojDUw">Errors / exception handling&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=bS7jtl-CoEs">Allocators&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=JEHZJHfiAfk">Unions/variants&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=NN1GC0E8J6I">Structs and OOP&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="upcoming-events">Upcoming events&lt;/h1>
+&lt;p>&lt;a href="https://www.handmade-seattle.com">Handmade Seattle&lt;/a> has several attendees from the Zig community, as well as talks and demos for Zig November 11-12, 2021.&lt;/p>
+&lt;p>P.S. In case you missed it, &lt;a href="https://ziglang.org/download/0.8.1/release-notes.html">Zig 0.8.1 has been released&lt;/a>!&lt;/p>
+&lt;hr>
+&lt;p>If you&amp;rsquo;re one of the 150+ subscribers or &lt;a href="https://zigmonthly.org/privacy">3.5k+ viewers&lt;/a>, thanks for reading!&lt;/p>
+&lt;p>Please consider &lt;a href="https://github.com/sponsors/slimsag">supporting my work&lt;/a>&lt;/p></description></item><item><title>Zig monthly, August 2021: iOS support, tutorials, tree-sitter, a pathtracer, and more</title><link>https://zigmonthly.org/letters/2021/august/</link><pubDate>Sun, 01 Aug 2021 03:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2021/august/</guid><description>&lt;h1 id="announcing-zigmonthlyorg">Announcing zigmonthly.org&lt;/h1>
 &lt;p>Today, I am launching zigmonthly.org: a once-a-month publication where I curate all things Zig that I’ve seen since the past month from the Zig Discord channels, &lt;a href="https://zig.news">zig.news&lt;/a>, Twitter, Reddit, etc. and do my best to come up with a nice showcase. &lt;a href="https://zigmonthly.org/about">Learn more&lt;/a>&lt;/p>
 &lt;h1 id="zig-cross-compiling-to-ios-yes-please">Zig cross compiling to iOS? Yes please!&lt;/h1>
 &lt;p>Nearly matching up with &lt;a href="https://twitter.com/andy_kelley/status/1424163667306631168">Zig&amp;rsquo;s 6th birthday&lt;/a>, &lt;a href="https://github.com/kubkon">@kubkon&lt;/a> (a core team member and author of Zig&amp;rsquo;s MachO linker) has begun &lt;a href="https://github.com/ziglang/zig/pull/9532">adding minimal support for building iOS binaries with Zig, from any OS&lt;/a>. Here&amp;rsquo;s one running in the iOS emulator on a Mac:&lt;/p>

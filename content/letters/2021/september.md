@@ -5,8 +5,7 @@ draft: false
 images: ["https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png"]
 ---
 
-<a href="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png"><img width="480px" src="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png"></img></a>
-
+<a align="center" href="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png"><img width="650px" src="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png"></img></a>
 
 # Slingworks & The Underburrow game
 
@@ -14,17 +13,17 @@ images: ["https://user-images.githubusercontent.com/3173176/134820515-8d672889-4
 
 [@JonSnowbd shares _Slingworks 0.1_](https://github.com/JonSnowbd/slingworks): a simple and powerful Windows+Linux 'bring your content' engine built in Zig, as well as [Underburrow](https://github.com/JonSnowbd/underburrow): an all encompassing example for how Slingworks development works.
 
-<video width="480px" src="https://user-images.githubusercontent.com/3173176/134818362-4736ee45-1aa0-407c-92b0-c4a5b301d4d4.mp4" controls="controls" muted="muted">
+<video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/134818362-4736ee45-1aa0-407c-92b0-c4a5b301d4d4.mp4" controls="controls" muted="muted">
     <a href="https://user-images.githubusercontent.com/3173176/134818362-4736ee45-1aa0-407c-92b0-c4a5b301d4d4.mp4">
-        <img width="480px" src="https://user-images.githubusercontent.com/3173176/134818764-20d3f95c-090c-4000-8595-7e205247360e.png"></img>
+        <img width="650px" src="https://user-images.githubusercontent.com/3173176/134818764-20d3f95c-090c-4000-8595-7e205247360e.png"></img>
     </a>
 </video>
 
 Both are still heavily under development, but it's already quite cool:
 
-<a href="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png"><img width="240px" src="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png"></img></a> <a href="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png"><img width="240px" src="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png"></img></a>
+<a href="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png"><img width="325px" src="https://user-images.githubusercontent.com/3173176/134818377-5f4f40dc-9436-4aef-906e-7256d8f5c2a9.png"></img></a> <a href="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png"><img width="325px" src="https://user-images.githubusercontent.com/3173176/134818383-1a2d2e23-0907-47cb-89be-b2b019e487b5.png"></img></a>
 
-<a href="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png"><img width="240px" src="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png"></img></a> <a href="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png"><img width="240px" src="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png"></img></a>
+<a href="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png"><img width="325px" src="https://user-images.githubusercontent.com/3173176/134818386-bcadf2f4-08c6-4b3b-8770-b06a8a7a1721.png"></img></a> <a href="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png"><img width="325px" src="https://user-images.githubusercontent.com/3173176/134818389-a8840e3c-cb5d-43d8-b71e-2a7e7a4c56f0.png"></img></a>
 
 Check it out: [Slingworks](https://github.com/JonSnowbd/slingworks) | [Underburrow](https://github.com/JonSnowbd/underburrow)
 
@@ -53,9 +52,9 @@ As well as a series of articles:
 
 Also see his earlier 2021 FOSDEM talk: [Create an Android Application with Zig](https://fosdem.org/2021/schedule/event/zig_android/) - I've included a short clip of the demo within for your enjoyment:
 
-<video width="480px" src="https://user-images.githubusercontent.com/3173176/134788433-811ce689-ed38-40d3-8fda-09f5364e9734.mov" controls="controls" muted="muted">
+<video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/134788433-811ce689-ed38-40d3-8fda-09f5364e9734.mov" controls="controls" muted="muted">
     <a href="https://user-images.githubusercontent.com/3173176/134788433-811ce689-ed38-40d3-8fda-09f5364e9734.mov">
-        <img width="480px" src="https://user-images.githubusercontent.com/3173176/134788463-ee505626-01d0-435c-9f74-05b0483aee74.png"></img>
+        <img width="650px" src="https://user-images.githubusercontent.com/3173176/134788463-ee505626-01d0-435c-9f74-05b0483aee74.png"></img>
     </a>
 </video>
 
@@ -71,9 +70,9 @@ Rafael Batiati has shared a very interesting article: [IUP for Zig](https://zig.
 
 > It's a cross-platform GUI toolkit developed by PUC-RIO, the same university behind the excellent Lua language.
 
-<a href="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png"><img width="480px" src="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png"></img></a>
+<a align="center" href="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png"><img width="650px" src="https://user-images.githubusercontent.com/3173176/134789187-8e3eddef-30e2-4fd7-b296-eb4de0f911f1.png"></img></a>
 
-<a href="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png"><img width="480px" src="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png"></img></a>
+<a align="center" href="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png"><img width="650px" src="https://user-images.githubusercontent.com/3173176/134789196-25ead67b-3939-49a1-b065-1ba77762ceb1.png"></img></a>
 
 # Robinhood hash tables
 
@@ -91,7 +90,7 @@ Rafael Batiati has shared a very interesting article: [IUP for Zig](https://zig.
 
 [@Jack-Ji has implemented](https://github.com/Jack-Ji/ray-tracing-weekend.zig) the famous [ray-tracing-in-a-weekend](https://raytracing.github.io) in Zig:
 
-<a href="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png"><img width="480px" src="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png"></img></a>
+<a align="center" href="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png"><img width="650px" src="https://user-images.githubusercontent.com/3173176/134789958-20a0d223-6510-42b5-8878-d7ad94f8c14c.png"></img></a>
 
 # Fast LRU cache
 
@@ -119,7 +118,7 @@ Also brought to us by [Kenta Iwasaki](https://github.com/lithdew):
 
 # Learning Zig
 
-![ziglings](https://user-images.githubusercontent.com/1458409/109398392-c1069500-790a-11eb-8ed4-7d7d74d32666.jpg)
+<a align="center" href="https://user-images.githubusercontent.com/1458409/109398392-c1069500-790a-11eb-8ed4-7d7d74d32666.jpg"><img width="650px" src="https://user-images.githubusercontent.com/1458409/109398392-c1069500-790a-11eb-8ed4-7d7d74d32666.jpg"></img></a>
 
 Now seems like an excellent time to point out two resources for anyone considering learning Zig:
 

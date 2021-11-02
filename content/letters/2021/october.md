@@ -29,13 +29,16 @@ I highly encourage [checking out his other work.](https://github.com/sponsors/Ma
 
 # Cross-platform Elixir applications using Zig
 
-[Quinn Wilton shared](https://twitter.com/wilton_quinn/status/1453152473112145928) burrito, a project which uses Zig to enable building cross-platform Elixir applications
+[Quinn Wilton shared](https://twitter.com/wilton_quinn/status/1453152473112145928) Burrito, a project by [@doawoo](https://twitter.com/doawoo) which uses Zig to enable building cross-platform Elixir applications
 
 > I'm thrilled to open source work we've done to support building cross-platform Elixir applications!
 >
 > We're using this code in production to distribute command-line applications to on-premise customer environments, without an installed Erlang runtime.
 
 It is accompanied by an excellent talk at ElixirConf 2021 [which you can watch here](https://www.youtube.com/watch?v=lDfjdGva3NE&list=PLqj39LCvnOWZna91xJ_i44g3rx4Brbpnv).
+
+_**EDIT:** Updated to clarify the project is by [@doawoo](https://twitter.com/doawoo) (Quinn: ["I just want to make sure to credit @doawoo
+ for Burrito. I was involved, but it's really their project."](https://twitter.com/wilton_quinn/status/1455653326129807362?s=20))_
 
 # zig-gamedev project
 

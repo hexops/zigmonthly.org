@@ -199,12 +199,14 @@
 &lt;/blockquote>
 &lt;p>I highly encourage &lt;a href="https://github.com/sponsors/MasterQ32">checking out his other work.&lt;/a>&lt;/p>
 &lt;h1 id="cross-platform-elixir-applications-using-zig">Cross-platform Elixir applications using Zig&lt;/h1>
-&lt;p>&lt;a href="https://twitter.com/wilton_quinn/status/1453152473112145928">Quinn Wilton shared&lt;/a> burrito, a project which uses Zig to enable building cross-platform Elixir applications&lt;/p>
+&lt;p>&lt;a href="https://twitter.com/wilton_quinn/status/1453152473112145928">Quinn Wilton shared&lt;/a> Burrito, a project by &lt;a href="https://twitter.com/doawoo">@doawoo&lt;/a> which uses Zig to enable building cross-platform Elixir applications&lt;/p>
 &lt;blockquote>
 &lt;p>I&amp;rsquo;m thrilled to open source work we&amp;rsquo;ve done to support building cross-platform Elixir applications!&lt;/p>
 &lt;p>We&amp;rsquo;re using this code in production to distribute command-line applications to on-premise customer environments, without an installed Erlang runtime.&lt;/p>
 &lt;/blockquote>
 &lt;p>It is accompanied by an excellent talk at ElixirConf 2021 &lt;a href="https://www.youtube.com/watch?v=lDfjdGva3NE&amp;amp;list=PLqj39LCvnOWZna91xJ_i44g3rx4Brbpnv">which you can watch here&lt;/a>.&lt;/p>
+&lt;p>&lt;em>&lt;strong>EDIT:&lt;/strong> Updated to clarify the project is by &lt;a href="https://twitter.com/doawoo">@doawoo&lt;/a> (Quinn: &lt;a href="https://twitter.com/wilton_quinn/status/1455653326129807362?s=20">&amp;ldquo;I just want to make sure to credit @doawoo
+for Burrito. I was involved, but it&amp;rsquo;s really their project.&amp;quot;&lt;/a>)&lt;/em>&lt;/p>
 &lt;h1 id="zig-gamedev-project">zig-gamedev project&lt;/h1>
 &lt;p>&lt;a href="https://github.com/michal-z">@michal-z&lt;/a>, independent graphics programmer &amp;amp; ex-AMD/Frostbite/EA DICE/Intel engineer shares the &lt;a href="https://github.com/michal-z/zig-gamedev">zig-gamedev project&lt;/a>:&lt;/p>
 &lt;video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/139600261-8c424980-afeb-4774-8ec9-aa8e5eca3662.mp4" controls="controls" muted="muted">

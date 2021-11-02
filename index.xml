@@ -183,8 +183,7 @@
 &lt;li>&lt;a href="https://corecursive.com/067-zig-with-andrew-kelley/">Full-Time Open Source With Andrew Kelley&lt;/a> (podcast, transcribed)&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;p>Enjoying Zig monthly? Please consider &lt;a href="https://github.com/sponsors/slimsag">supporting my work&lt;/a>&lt;/p></description></item><item><title>Zig monthly, October 2021: Games, gamedev, Elixir, tools &amp; more</title><link>https://zigmonthly.org/letters/2021/october/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zigmonthly.org/letters/2021/october/</guid><description>&lt;p>&lt;a href="https://user-images.githubusercontent.com/3173176/139949770-9002e36d-3c00-447c-a9ab-b9f52c251b28.png">https://user-images.githubusercontent.com/3173176/139949770-9002e36d-3c00-447c-a9ab-b9f52c251b28.png&lt;/a>&lt;/p>
-&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/139949770-9002e36d-3c00-447c-a9ab-b9f52c251b28.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/139949770-9002e36d-3c00-447c-a9ab-b9f52c251b28.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;p>Enjoying Zig monthly? Please consider &lt;a href="https://github.com/sponsors/slimsag">supporting my work&lt;/a>&lt;/p></description></item><item><title>Zig monthly, October 2021: Games, gamedev, Elixir, tools &amp; more</title><link>https://zigmonthly.org/letters/2021/october/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zigmonthly.org/letters/2021/october/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/139949770-9002e36d-3c00-447c-a9ab-b9f52c251b28.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/139949770-9002e36d-3c00-447c-a9ab-b9f52c251b28.png">&lt;/img>&lt;/a>&lt;/p>
 &lt;p>Wow! So much has happened over the last month in Zig that it&amp;rsquo;s been downright overwhelming, let&amp;rsquo;s dive right in!&lt;/p>
 &lt;h1 id="digital-scavenger-game">Digital Scavenger (game)&lt;/h1>
 &lt;p>&lt;a href="https://github.com/sponsors/MasterQ32">Felix &amp;ldquo;xq&amp;rdquo; Queißner&lt;/a> - you may recall his &lt;a href="https://zigmonthly.org/letters/2021/september#android-support">Android support&lt;/a> in the last zigmonthly. He&amp;rsquo;s back, and this time sharing an early gameplay video of his Digital Scavenger game prototype:&lt;/p>
@@ -199,14 +198,14 @@
 &lt;p>It&amp;rsquo;s built with Zig, OpenGL ES 2.0 and a lot of love, also uses Box2D.&lt;/p>
 &lt;/blockquote>
 &lt;p>I highly encourage &lt;a href="https://github.com/sponsors/MasterQ32">checking out his other work.&lt;/a>&lt;/p>
-&lt;h2 id="cross-platform-elixir-applications-using-zig">Cross-platform Elixir applications using Zig&lt;/h2>
+&lt;h1 id="cross-platform-elixir-applications-using-zig">Cross-platform Elixir applications using Zig&lt;/h1>
 &lt;p>&lt;a href="https://twitter.com/wilton_quinn/status/1453152473112145928">Quinn Wilton shared&lt;/a> burrito, a project which uses Zig to enable building cross-platform Elixir applications&lt;/p>
 &lt;blockquote>
 &lt;p>I&amp;rsquo;m thrilled to open source work we&amp;rsquo;ve done to support building cross-platform Elixir applications!&lt;/p>
 &lt;p>We&amp;rsquo;re using this code in production to distribute command-line applications to on-premise customer environments, without an installed Erlang runtime.&lt;/p>
 &lt;/blockquote>
 &lt;p>It is accompanied by an excellent talk at ElixirConf 2021 &lt;a href="https://www.youtube.com/watch?v=lDfjdGva3NE&amp;amp;list=PLqj39LCvnOWZna91xJ_i44g3rx4Brbpnv">which you can watch here&lt;/a>.&lt;/p>
-&lt;h2 id="zig-gamedev-project">zig-gamedev project&lt;/h2>
+&lt;h1 id="zig-gamedev-project">zig-gamedev project&lt;/h1>
 &lt;p>&lt;a href="https://github.com/michal-z">@michal-z&lt;/a>, independent graphics programmer &amp;amp; ex-AMD/Frostbite/EA DICE/Intel engineer shares the &lt;a href="https://github.com/michal-z/zig-gamedev">zig-gamedev project&lt;/a>:&lt;/p>
 &lt;video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/139600261-8c424980-afeb-4774-8ec9-aa8e5eca3662.mp4" controls="controls" muted="muted">
 &lt;a href="https://user-images.githubusercontent.com/3173176/139600261-8c424980-afeb-4774-8ec9-aa8e5eca3662.mp4">
@@ -222,12 +221,12 @@
 &lt;blockquote>
 &lt;p>I build game development stuff in Zig full-time. If you like my work and my mission to promote the language, please consider supporting me. I will create more sample applications, libraries and complete mini-games. I have game development knowledge and experience and I want to share it with others by writing open-source software in Zig.&lt;/p>
 &lt;/blockquote>
-&lt;h2 id="fuzz-testing">Fuzz testing&lt;/h2>
+&lt;h1 id="fuzz-testing">Fuzz testing&lt;/h1>
 &lt;p>Ryan Liptak shared an &lt;a href="https://www.ryanliptak.com/blog/improving-fuzz-testing-with-zig-allocators/">excellent article&lt;/a> on improving fuzz testing using the AFL fuzzer with Zig allocators.&lt;/p>
-&lt;h2 id="zig-snapshots-debugger">Zig snapshots debugger&lt;/h2>
+&lt;h1 id="zig-snapshots-debugger">Zig snapshots debugger&lt;/h1>
 &lt;p>&lt;a href="https://github.com/kubkon">@kubkon&lt;/a>, the Zig core team member working on the Zig linker, announced &lt;a href="https://github.com/kubkon/zig-snapshots">zig-snapshots&lt;/a> - an interactive debugging tool allowing you to preview snapshots of Zig&amp;rsquo;s incremental linker progression between subsequent incremental updates:&lt;/p>
 &lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/139801303-7fc75638-61ab-4401-a285-68d9ca380052.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/139801303-7fc75638-61ab-4401-a285-68d9ca380052.png">&lt;/img>&lt;/a>&lt;/p>
-&lt;h2 id="zig-self-hosted-compiler-progress">Zig self-hosted compiler progress&lt;/h2>
+&lt;h1 id="zig-self-hosted-compiler-progress">Zig self-hosted compiler progress&lt;/h1>
 &lt;p>Andrew Kelley is &lt;a href="https://twitter.com/andy_kelley/status/1448869273431011330">sharing regular progress updates&lt;/a> on the Zig self-hosted compiler, which is a major milestone for Zig:&lt;/p>
 &lt;blockquote>
 &lt;p>Zig self-hosted compiler progress report:&lt;/p>
@@ -243,18 +242,18 @@
 &lt;/ul>
 &lt;/blockquote>
 &lt;p>Zig self-hosted &lt;a href="https://twitter.com/andy_kelley/status/1448869273431011330">https://twitter.com/andy_kelley/status/1448869273431011330&lt;/a>&lt;/p>
-&lt;h2 id="glfw-bindings">GLFW bindings&lt;/h2>
+&lt;h1 id="glfw-bindings">GLFW bindings&lt;/h1>
 &lt;p>This one from yours truly. I&amp;rsquo;ve announced &lt;a href="https://github.com/hexops/mach-glfw">mach-glfw&lt;/a>: Ziggified GLFW bindings with 100% API coverage, zero-fuss installation, cross compilation, and more as well as a &lt;a href="https://github.com/hexops/mach-glfw-vulkan-example">Vulkan example&lt;/a> to go along with it. This one small step towards &lt;a href="https://devlog.hexops.com/2021/mach-engine-the-future-of-graphics-with-zig">my vision for Mach engine&lt;/a>.&lt;/p>
 &lt;p>Learn more: &lt;a href="https://devlog.hexops.com/2021/perfecting-glfw-for-zig-and-finding-undefined-behavior">Perfecting GLFW for Zig, and finding lurking undefined behavior that went unnoticed for 6+ years&lt;/a>&lt;/p>
 &lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/139573985-d862f35a-e78e-40c2-bc0c-9c4fb68d6ecd.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/139573985-d862f35a-e78e-40c2-bc0c-9c4fb68d6ecd.png">&lt;/img>&lt;/a>&lt;/p>
-&lt;h2 id="using-zig-and-translate-c-to-understand-weird-c-code">Using Zig and translate-c to understand weird C code&lt;/h2>
+&lt;h1 id="using-zig-and-translate-c-to-understand-weird-c-code">Using Zig and translate-c to understand weird C code&lt;/h1>
 &lt;p>Over on zig.news, &lt;a href="https://zig.news/sobeston">Sobeston&lt;/a> has published &lt;a href="https://zig.news/sobeston/using-zig-and-translate-c-to-understand-weird-c-code-4f8">a very interesting article&lt;/a> walking through how they use Zig&amp;rsquo;s translate-c functionality (which converts C code to Zig code) to understand what a strange C code snippet is doing. Very much worth the read.&lt;/p>
-&lt;h2 id="andrew-kelley-on-the-sourcegraph-podcast">Andrew Kelley on the Sourcegraph podcast&lt;/h2>
+&lt;h1 id="andrew-kelley-on-the-sourcegraph-podcast">Andrew Kelley on the Sourcegraph podcast&lt;/h1>
 &lt;p>Recently I got the opportunity to join Andrew Kelley on the Sourcegraph podcast through my dayjob (I work at Sourcegraph), it&amp;rsquo;s a high-level chat around why Andrew built Zig, the challenges in doing so, how programmers can get funding for their side projects and hobbies, the differences between Zig and C, and why and how Zig can be faster than both C and Rust. Check it out on YouTube below or &lt;a href="https://about.sourcegraph.com/podcast/andrew-kelley/">read it here&lt;/a>.&lt;/p>
 &lt;p>&lt;a align="center" href="https://www.youtube.com/watch?v=gn3YsZ6HUHw">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/139802947-59c266c7-8caf-4fe2-b6a0-2d8dd7dc909c.png">&lt;/img>&lt;/a>&lt;/p>
-&lt;h2 id="sat-november-6th-zig-showtime">Sat November 6th: Zig SHOWTIME!&lt;/h2>
+&lt;h1 id="sat-november-6th-zig-showtime">Sat November 6th: Zig SHOWTIME!&lt;/h1>
 &lt;p>We&amp;rsquo;re just a few days away from the next Zig SHOWTIME episode. Join live by going to &lt;a href="https://zig.show">https://zig.show&lt;/a> for more info, or &lt;a href="https://calendar.google.com/calendar/embed?src=8a028atr03arr440lsqp4a5tls%40group.calendar.google.com&amp;amp;ctz=Europe%2FRome&amp;amp;utm_source=ZigSHOWTIME&amp;amp;utm_medium=email&amp;amp;utm_campaign=zig-rush-zig-showtime-30">subscribe to the Zig SHOWTIME calendar&lt;/a> (&lt;a href="https://calendar.google.com/calendar/ical/8a028atr03arr440lsqp4a5tls%40group.calendar.google.com/public/basic.ics?utm_source=ZigSHOWTIME&amp;amp;utm_medium=email&amp;amp;utm_campaign=zig-rush-zig-showtime-30">iCal&lt;/a>) to have all episodes automatically added to your calendar.&lt;/p>
-&lt;h2 id="nov-11-12th-handmade-seattle-conference">Nov 11-12th: Handmade Seattle conference!&lt;/h2>
+&lt;h1 id="nov-11-12th-handmade-seattle-conference">Nov 11-12th: Handmade Seattle conference!&lt;/h1>
 &lt;p>Whether you join remotely or in-person, &lt;a href="https://www.handmade-seattle.com/">Handmade Seattle&lt;/a>, the Independent Systems Programming Conference is here!&lt;/p>
 &lt;p>Several members of the Zig community are joining both online, and in person (myself included). The conference will also feature talks by Andrew Kelley,&lt;/p>
 &lt;p>Andrew Kelley and others in the Zig community will also be giving talks and demos, so you won&amp;rsquo;t want to miss it!&lt;/p>

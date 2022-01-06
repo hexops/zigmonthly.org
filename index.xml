@@ -1,4 +1,104 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zig monthly</title><link>https://zigmonthly.org/</link><description>Recent content on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 25 Sep 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig monthly, September 2021: Unicode, Android, cross-platform GUIs, learning resources &amp; more</title><link>https://zigmonthly.org/letters/2021/september/</link><pubDate>Sat, 25 Sep 2021 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2021/september/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png">&lt;/img>&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zig monthly</title><link>https://zigmonthly.org/</link><description>Recent content on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 31 Dec 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig monthly, December 2021: GUI, NodeJS modules, optional GC &amp; more</title><link>https://zigmonthly.org/letters/2021/december/</link><pubDate>Fri, 31 Dec 2021 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2021/december/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/148187357-381b3b33-bc2b-4243-a704-6c21a65f5b26.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/148187357-381b3b33-bc2b-4243-a704-6c21a65f5b26.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="vulkan-gpu-path-tracing">Vulkan GPU path tracing&lt;/h1>
+&lt;p>&lt;a href="https://github.com/ashpil">@ashpil&lt;/a> has been working on a GPU accelerated path tracer using vulkan-zig, GLFW, and the Vulkan ray tracing extensions:&lt;/p>
+&lt;video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/148028145-f231a70d-45de-467d-8b4e-70a5cc0eae85.mov" controls="controls" muted="muted">
+&lt;a href="https://user-images.githubusercontent.com/3173176/148028145-f231a70d-45de-467d-8b4e-70a5cc0eae85.mov">
+&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/148177248-0d46e710-f8cc-49c6-928a-7193a413d215.png">&lt;/img>
+&lt;/a>
+&lt;/video>
+&lt;blockquote>
+&lt;p>It&amp;rsquo;s about 6K lines of code, I thought a realistic chess game would be a good way to learn some advanced graphics techniques, as the gameplay is so well established I could just focus on the visuals.&lt;/p>
+&lt;p>Plans for the near future include performance optimizations (it probably lags less on an RTX series card but I&amp;rsquo;m on a 1080) and more interesting materials that take full advantage of path tracing.&lt;/p>
+&lt;/blockquote>
+&lt;p>They&amp;rsquo;re planning to publish the code on GitHub after polishing some more, you can keep an eye on their &lt;a href="https://github.com/ashpil">GitHub profile&lt;/a> or reach out to them on Discord (Brunch#9226) in the meantime!&lt;/p>
+&lt;h1 id="async-generator-library">Async generator library&lt;/h1>
+&lt;p>&lt;a href="https://twitter.com/yrashk">Yurii Rashkovskii&lt;/a> published &lt;a href="https://github.com/yrashk/zig-generator">zig-generator&lt;/a>-a library for writing async generator functions, which I found best described by &lt;a href="https://github.com/yrashk/zig-generator/commit/bda35aa8c9691319b8ddb37b3294befe61a5014e">this commit message&lt;/a> (but be sure to check out the code examples in the README):&lt;/p>
+&lt;blockquote>
+&lt;p>Problem: what&amp;rsquo;s the point of generators?&lt;/p>
+&lt;p>Generators look nice, but they are still slower than callbacks (as they naturally have more harness code).&lt;/p>
+&lt;p>Solution: provide Map and Join generators&lt;/p>
+&lt;p>The beauty of generators is that they are async and this allows us to build higher-level primitives.&lt;/p>
+&lt;p>Of a particular interest is Join that will allow to consume values from two generators, as they come.&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="zgt-a-zig-gui-toolkit">zgt: a Zig GUI toolkit&lt;/h1>
+&lt;p>&lt;a href="https://github.com/zenith391">@zenith391&lt;/a> released v0.1 of &lt;a href="https://www.reddit.com/r/Zig/comments/ru7cp0/zgt_zig_gui_toolkit_01_has_been_released">zgt (Zig GUI Toolkit)&lt;/a>:&lt;/p>
+&lt;video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/148033333-8a7ab325-ebd5-48bc-87e4-f057820e0e82.mp4" controls="controls" muted="muted">
+&lt;a href="https://user-images.githubusercontent.com/3173176/148033333-8a7ab325-ebd5-48bc-87e4-f057820e0e82.mp4">
+&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/148310446-60cac05f-839f-4b7b-ab11-0827a50f2bdd.png">&lt;/img>
+&lt;/a>
+&lt;/video>
+&lt;blockquote>
+&lt;p>zgt is a pure Zig (in fact, the only backend that needs libc is the GTK+ one) library for making cross-platform GUIs. It has first class support for animations and data binding. One notable thing is that its main aim is to use native widgets when available, but it (will) be able to draw widgets manually which will be used for the OpenGL ES backend. [&amp;hellip;] Only thing missing is a Cocoa / Mac OS backend.&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="low-level-terminal-manipulation">Low level terminal manipulation&lt;/h1>
+&lt;p>&lt;a href="https://github.com/xyaman">@xyaman&lt;/a> &lt;a href="https://github.com/xyaman/mibu">released mibu&lt;/a>, a library for low-level terminal manipulation, &amp;ldquo;[&amp;hellip;] It’s far from complete, but the basics work&amp;rdquo;:&lt;/p>
+&lt;blockquote>
+&lt;p>Features:&lt;/p>
+&lt;ul>
+&lt;li>Allocation free.&lt;/li>
+&lt;li>Raw mode.&lt;/li>
+&lt;li>8-16 colors.&lt;/li>
+&lt;li>True Color (24-bit RGB).&lt;/li>
+&lt;li>Cursor controls.&lt;/li>
+&lt;li>Clear(Erase) functions.&lt;/li>
+&lt;li>Colors.&lt;/li>
+&lt;li>Key events.&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h1 id="tinyvg">TinyVG&lt;/h1>
+&lt;p>&lt;a href="https://github.com/sponsors/MasterQ32">Felix &amp;ldquo;xq&amp;rdquo; Queißner&lt;/a> released &lt;a href="https://zig.news/xq/a-challenger-to-the-throne-of-vector-graphics-svg-is-dead-long-live-tinyvg-4on8">TinyVG&lt;/a>: &amp;ldquo;A challenger to the throne of vector graphics. SVG is dead, long live TinyVG!&amp;rdquo; - definitely worth checking out!&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/148180065-4b621b42-92c5-43ef-a573-661908fdf708.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/148180065-4b621b42-92c5-43ef-a573-661908fdf708.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="use-zig-to-build-native-nodejs-modules">Use Zig to build native NodeJS modules&lt;/h1>
+&lt;p>&lt;a href="https://ziglang.org/download/0.9.0/release-notes.html">Zig 0.9 was released&lt;/a> - which has enabled zig ld to be used to create native NodeJS modules without node-gyp. You can find some exampls &lt;a href="https://twitter.com/jorandirkgreef/status/1473259997563961345">from the Tigerbeetle team here&lt;/a>!&lt;/p>
+&lt;h1 id="self-hosted-compiler-progress">Self hosted compiler progress&lt;/h1>
+&lt;p>Development of the self-hosted Zig compiler continues, with &lt;a href="https://twitter.com/andy_kelley/status/1477385526625792000">the most recent numbers&lt;/a> (Jan 1st, 2022) showing over 50% of behavior tests passing with the LLVM backend(!):&lt;/p>
+&lt;blockquote>
+&lt;p>Zig self-hosted compiler progress report:&lt;/p>
+&lt;ul>
+&lt;li>159,096 lines of code&lt;/li>
+&lt;li>Behavior Tests Passing:
+&lt;ul>
+&lt;li>LLVM backend: 575/1078 (53%)&lt;/li>
+&lt;li>C backend: 298/1078 (28%)&lt;/li>
+&lt;li>WASM: 157/1078 (15%)&lt;/li>
+&lt;li>ARM: 7/1078 (1%)&lt;/li>
+&lt;li>x86: 0/1078 (0%)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>The 0.9 release notes included this awesome diagram:&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/148181147-46e59b0b-b10a-453c-b357-4b7538a74ffd.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/148181147-46e59b0b-b10a-453c-b357-4b7538a74ffd.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="gamedev-progress">Gamedev progress&lt;/h1>
+&lt;p>Progress continues in the area of gamedev, too, attempting to summarize:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/omaraaa">@omaraaa&lt;/a> published &lt;a href="https://github.com/omaraaa/VecFns">a vector math library&lt;/a> which extends your own &lt;code>Vec2f&lt;/code>, etc. struct declarations with methods - an interesting approach.&lt;/li>
+&lt;li>&lt;a href="https://twitter.com/MichalZiulek">@MichalZiulek&lt;/a> has been hard at work on a SIMD-accelerated vector math package for zig-gamedev: &lt;a href="https://github.com/michal-z/zig-gamedev/blob/main/libs/common/zmath.zig">zmath&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://twitter.com/MichalZiulek">@MichalZiulek&lt;/a> published a &lt;a href="https://github.com/michal-z/zig-gamedev/wiki/Progress-Reports#december-2021">zig-gamedev December 2020 progress report&lt;/a>, including audio, mesh shaders, and more!&lt;/li>
+&lt;li>I published &lt;a href="https://hexops.com/mach/">a website and roadmap for the upcoming Mach game engine&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h1 id="optional-garbage-collection">Optional garbage collection&lt;/h1>
+&lt;p>&lt;a href="https://twitter.com/mitchellh">Mitchell Hashimoto&lt;/a> (founder of Hashicorp) &lt;a href="https://twitter.com/mitchellh/status/1472652373319241731">wrote a wrapper for libgc in Zig&lt;/a> in order to learn how Zig interoperates with C (&amp;ldquo;turns out: exceptionally good&amp;rdquo;)&lt;/p>
+&lt;p>The library implements the standard Zig &lt;code>Allocator&lt;/code> interface, and should allow one to mix and match garbage collection and manual memory management, very cool!&lt;/p>
+&lt;h1 id="other-notable-mentions">Other notable mentions&lt;/h1>
+&lt;ul>
+&lt;li>Libraries
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/MasterQ32/zig-qoi">zig-qoi&lt;/a>: a Zig implementation of the QOI image format&lt;/li>
+&lt;li>&lt;a href="https://github.com/fubark/zig-v8">zig-v8&lt;/a>: Zig and C bindings for V8 useful for embedding V8 into projects.&lt;/li>
+&lt;li>&lt;a href="https://github.com/mattnite/zig-zlib">zlib&lt;/a>, &lt;a href="https://github.com/mattnite/zig-libcurl">libcurl&lt;/a>, and more C library bindings from &lt;a href="https://github.com/mattnite">@mattnite&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>News
+&lt;ul>
+&lt;li>Coil (the company behind Tigerbeetle DB) &lt;a href="https://twitter.com/uchiuchibeke/status/1473717044331880450">recently began sponsoring Zig&lt;/a> and the Tigerbeetle team shared some &lt;a href="https://twitter.com/jorandirkgreef/status/1474697395028045824">interesting insights into how they use leverage comptime for their database&lt;/a>.&lt;/li>
+&lt;li>&lt;a href="https://twitter.com/sheredom/status/1475441606207676419">@sheredom&lt;/a> and &lt;a href="https://twitter.com/postgoodism/status/1476999481228881921">@postgoodism&lt;/a> both shared Advent of Code postmortems after having completed it in Zig!&lt;/li>
+&lt;li>&lt;a href="https://twitter.com/aransentin">Jens Goldberg&lt;/a> shared an &lt;a href="https://zig.news/aransentin/analysis-of-the-overhead-of-a-minimal-zig-program-4lg0">&amp;ldquo;Analysis of the overhead of a minimal Zig program&amp;rdquo;&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="thanks-for-reading">Thanks for reading!&lt;/h1>
+&lt;p>If you like my work on zigmonthly, Mach engine, etc. consider &lt;a href="https://github.com/sponsors/slimsag">sponsoring me on GitHub&lt;/a> so I can do even more of it!&lt;/p></description></item><item><title>Zig monthly, September 2021: Unicode, Android, cross-platform GUIs, learning resources &amp; more</title><link>https://zigmonthly.org/letters/2021/september/</link><pubDate>Sat, 25 Sep 2021 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2021/september/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/134820515-8d672889-4deb-4b82-bec0-8497de9293f8.png">&lt;/img>&lt;/a>&lt;/p>
 &lt;h1 id="slingworks--the-underburrow-game">Slingworks &amp;amp; The Underburrow game&lt;/h1>
 &lt;blockquote>
 &lt;p>&lt;em>Underburrow is a speed running platformer game where you gather momentum with well timed button taps&lt;/em>&lt;/p>

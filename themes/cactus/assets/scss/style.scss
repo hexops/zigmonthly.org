@@ -198,6 +198,11 @@ pre {
     letter-spacing: 0em;
   }
 
+  blockquote {
+    padding-left: 1rem;
+    border-left: 1px solid white;
+  }
+
   .code-copy-btn:hover {
     background-color: #666;
     color: #2bbc8a;

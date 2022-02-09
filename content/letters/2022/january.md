@@ -9,7 +9,7 @@ images: ["https://user-images.githubusercontent.com/3173176/153108292-db1f0981-a
 
 # zoltan: a minimalist Lua binding 
 
-This month's showcase mention is [@ranciere](https://github.com/ranciere)'s [zoltan project](), a minimalist Lua binding. Use cases:
+This month's showcase mention is [@ranciere](https://github.com/ranciere)'s [zoltan project](https://github.com/ranciere/zoltan), a minimalist Lua binding. Use cases:
 
 * Dynamic configuration of the application (you can handle complex configuration cases which involve logic)
 * To support user-defined extensions

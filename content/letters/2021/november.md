@@ -1,6 +1,6 @@
 ---
 title: "Zig monthly, November 2021: Pixel art editor, meetup talks, Advent of Code & more"
-date: 2021-12-6T00:00:00-07:00
+date: 2021-12-06T00:00:00-07:00
 draft: false
 images: ["https://user-images.githubusercontent.com/3173176/145131946-c52acf12-5859-4210-a1c1-fa67af567129.png"]
 ---

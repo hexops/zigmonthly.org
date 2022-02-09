@@ -83,7 +83,7 @@
     <ul class="post-list">
       {{ range (.Paginate $mainPosts).Pages }}
         <li class="post-item">
-          <span><a href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
+          <span><a href="{{ .Permalink }}">{{ if .Title }} {{- strings.TrimPrefix "Zig monthly, " .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
         </li>
       {{ end }}
     </ul>

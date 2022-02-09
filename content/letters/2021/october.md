@@ -1,6 +1,6 @@
 ---
 title: "Zig monthly, October 2021: Games, gamedev, Elixir, tools & more"
-date: 2021-11-2T00:00:00-07:00
+date: 2021-11-02T00:00:00-07:00
 draft: false
 images: ["https://user-images.githubusercontent.com/3173176/139949770-9002e36d-3c00-447c-a9ab-b9f52c251b28.png"]
 ---

@@ -515,4 +515,79 @@ for Burrito. I was involved, but it&amp;rsquo;s really their project.&amp;quot;&
 &lt;li>&lt;a href="https://corecursive.com/067-zig-with-andrew-kelley/">Full-Time Open Source With Andrew Kelley&lt;/a> (podcast, transcribed)&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;p>Enjoying Zig monthly? Please consider &lt;a href="https://github.com/sponsors/slimsag">supporting my work&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>Enjoying Zig monthly? Please consider &lt;a href="https://github.com/sponsors/slimsag">supporting my work&lt;/a>&lt;/p></description></item><item><title>Zig monthly, February 2022: Language interoperability keeps getting better</title><link>https://zigmonthly.org/letters/2022/february/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zigmonthly.org/letters/2022/february/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/158046724-d423ec00-db66-4346-be54-257a59082b52.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/158046724-d423ec00-db66-4346-be54-257a59082b52.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="haskell--zig">Haskell ↔ Zig&lt;/h1>
+&lt;p>&lt;a href="https://luctielen.com/posts/calling_zig_from_haskell/">Calling Zig from Haskell&lt;/a> by &lt;a href="https://twitter.com/luctielen">@luctielen&lt;/a> covers how to leverage Zig from Haskell.&lt;/p>
+&lt;h1 id="nodejs--zig">NodeJS ↔ Zig&lt;/h1>
+&lt;p>&lt;a href="https://github.com/pluvial/node-zig/tree/main/packages/cli">&lt;code>@ziglang/cli&lt;/code>&lt;/a> is a new NPM package by &lt;a href="https://github.com/pluvial">@pluvial&lt;/a> which makes it easy to integrate Zig into a NodeJS project.&lt;/p>
+&lt;p>They&amp;rsquo;re also using it in conjunction with their other project, &lt;a href="https://github.com/pluvial/vite-plugin-zig">vite-plugin-zig&lt;/a> to do things like &lt;a href="https://pluvial.xyz/wasm">WebAssembly math addition&lt;/a>. Pretty cool!&lt;/p>
+&lt;h1 id="rust--zig">Rust ↔ Zig&lt;/h1>
+&lt;p>&lt;a href="https://github.com/messense/cargo-zigbuild">cargo-zigbuild&lt;/a> has just been released by &lt;a href="https://github.com/messense">@messense&lt;/a>, allowing one to compile a Rust Cargo project with Zig as linker for &lt;a href="https://actually.fyi/posts/zig-makes-rust-cross-compilation-just-work/">easier cross compilation&lt;/a>!&lt;/p>
+&lt;h1 id="mruby--zig">mruby ↔ Zig&lt;/h1>
+&lt;p>&lt;a href="https://github.com/dantecatalfamo/mruby-zig">mruby-zig&lt;/a> by &lt;a href="https://github.com/dantecatalfamo">@dantecatalfamo&lt;/a> lets you leverage the embeddable Ruby implementation fully from Zig applications!&lt;/p>
+&lt;h1 id="huffman-coding-visualization">Huffman coding visualization&lt;/h1>
+&lt;p>&lt;a href="https://github.com/190n">190n&lt;/a> created a &lt;a href="https://190n.github.io/huffman-visualization/">visualization of the Huffman coding algorithm&lt;/a>&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/158044546-01dc8086-076d-4daa-9207-f06e3780de34.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/158044546-01dc8086-076d-4daa-9207-f06e3780de34.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="using-zig-comptime-for-conceptual-dryness-forth">Using Zig comptime for conceptual dryness (Forth)&lt;/h1>
+&lt;p>&lt;a href="https://www.lucabol.com">@lucabol&lt;/a> shared an interesting article on &lt;a href="https://www.lucabol.com/posts/2022-03-09-using-zig-comptime-for-conceptual-dryness/">Using Zig comptime for conceptual dryness&lt;/a> - describing an implementation of the Forth language in Zig.&lt;/p>
+&lt;h1 id="telegram--zig">Telegram ↔ Zig&lt;/h1>
+&lt;p>&lt;a href="https://github.com/axgdev">@axgdev&lt;/a> wrote a &lt;a href="https://github.com/axgdev/telegram_echobot_zig">telegram echo bot&lt;/a> in Zig, pretty cool and shows usage of the &lt;code>requestz&lt;/code> HTTP library. They also &lt;a href="https://www.twitch.tv/videos/1298657556">streamed development of it on Twitch&lt;/a> and more recently even released a &lt;a href="https://github.com/axgdev/telezig">Telegram library for Zig&lt;/a>.&lt;/p>
+&lt;h1 id="gameboy-advance-emulator">Gameboy Advance Emulator&lt;/h1>
+&lt;p>Rekai has been working on &lt;a href="https://git.musuka.dev/paoda/zba">ZBA, a gameboy advance emulator&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>I&amp;rsquo;ve been working on a Gameboy Advance Emulator! With an initial (quite broken) implementation of Mode 0 Graphics I finally have something visual to show off. It&amp;rsquo;s still very early so the CPU is the only thing that really passes the gauntlet of test ROMs out there.&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/158044744-f8c33a08-4cf1-4b45-bccc-7a793f209a8b.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/158044744-f8c33a08-4cf1-4b45-bccc-7a793f209a8b.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="simple-linking-format">Simple Linking Format&lt;/h1>
+&lt;p>&lt;a href="https://github.com/MasterQ32">@MasterQ32&lt;/a> released a small project for learn the basics of linking, &lt;a href="https://github.com/MasterQ32/SLF">SLF&lt;/a>, &amp;ldquo;a very simple object file format that can be used to link programs that don&amp;rsquo;t require distinct sections for code and data.&amp;rdquo;&lt;/p>
+&lt;h1 id="in-depth-articles-about-the-stage2-zig-compiler-internals">In-depth articles about the stage2 Zig compiler internals&lt;/h1>
+&lt;p>Mitchell Hashimoto has been publishing &lt;a href="https://mitchellh.com/zig">a series of in-depth articles&lt;/a> about the internals of the stage2 Zig compiler, including:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://mitchellh.com/zig/tokenizer">Zig Tokenizer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mitchellh.com/zig/parser">Zig Parser&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mitchellh.com/zig/astgen">Zig AstGen: AST =&amp;gt; ZIR&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mitchellh.com/zig/sema">Zig Sema: ZIR =&amp;gt; AIR&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mitchellh.com/zig/build-internals">Zig Build System Internals&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Also relevant, I highly suggest checking out &lt;a href="https://zig.news/gowind">Govind&amp;rsquo;s&lt;/a> 2-part series &lt;a href="https://zig.news/gowind/so-where-is-my-stuff-stored-part-1-38b7">&amp;ldquo;So where is my stuff stored ?&amp;quot;&lt;/a> which dives into some of the lower-level details when investigating how Zig creates structs on the stack.&lt;/p>
+&lt;h1 id="brucelib">Brucelib&lt;/h1>
+&lt;p>Although early stages and very much a work-in-progress, &lt;a href="https://github.com/hazeycode">@hazeycode&lt;/a> announced they are working on &lt;a href="https://github.com/hazeycode/brucelib">Brucelib&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>A monorepo of modules for programming cross-platform games, simulations, engines and editors. Leveraging the Zig programming language and toolchain, brucelib intends to be highly hackable and suitable for rapid prototyping, jams or fully-fledged products. Each module is designed to be easy to configure, extend or modify to your own specific needs, and to replace with something else in future if your project demands it.&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/158044639-d7815e33-fbd5-463f-a470-e4965381ee14.gif">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/158044639-d7815e33-fbd5-463f-a470-e4965381ee14.gif">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="cosmic">Cosmic&lt;/h1>
+&lt;p>&lt;a href="https://github.com/fubark">@fubark&lt;/a> is working on &lt;a href="https://www.cosmic-js.com/">Cosmic&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>Cosmic is a general purpose runtime for Javascript and WASM. It aims to have broad applications by exposing native cross platform APIs: window management, 2D/3D graphics, UI widgets, filesystem, networking, and more. It also aims to streamline software tooling to provide the essentials to help you develop and maintain software.&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/158045196-4836fb58-1039-4e66-b64e-19242bfa46f1.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/158045196-4836fb58-1039-4e66-b64e-19242bfa46f1.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="regz-zig-code-generator-for-microcontrollers">regz: Zig code generator for microcontrollers&lt;/h1>
+&lt;p>&lt;a href="https://github.com/mattnite">@mattnite&lt;/a> and the Zig embedded group published &lt;a href="https://github.com/ZigEmbeddedGroup/regz">regz&lt;/a>, a Zig code generator for microcontrollers produced from SVD files.&lt;/p>
+&lt;h1 id="zig-kills-it-in-the-wasm4-game-jam">Zig kills it in the WASM4 game jam&lt;/h1>
+&lt;p>Zig games were quite prominant in the WASM4 game jam, there&amp;rsquo;s a great &lt;a href="https://forum.ziggit.dev/t/awesome-tiny-games-in-11-programming-languages-wasm-4-jam-2022-results/63">overview video on the new Zig forum&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://gitlab.com/freiguy1">@freiguy1&lt;/a> for example did a Zig implementation of the original Snake game which you can play here: &lt;a href="https://freiguy1.itch.io/znake">https://freiguy1.itch.io/znake&lt;/a>&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/158045251-e959db9e-dd8d-4af4-b4af-c9667cad3e75.png">&lt;img height="340px" src="https://user-images.githubusercontent.com/3173176/158045251-e959db9e-dd8d-4af4-b4af-c9667cad3e75.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="package-indexes">Package indexes&lt;/h1>
+&lt;p>Now seems like a good time to re-highlight &lt;a href="https://aquila.red/">Aquila&lt;/a> by &lt;a href="https://github.com/nektro">@nektro&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>A federated package index and CI system for the Zig programming language built around the Zigmod package manager.&lt;/p>
+&lt;/blockquote>
+&lt;p>Aquila recently got support for &lt;a href="https://aquila.red/stats">statistics&lt;/a> and README rendering.&lt;/p>
+&lt;p>As well you should check out &lt;a href="https://zig.pm/">zig.pm&lt;/a>, the Zig package aggregator by &lt;a href="https://github.com/MasterQ32">@MasterQ32&lt;/a> which you can &lt;a href="https://zig.news/xq/zig-package-aggregator-58co">read about here&lt;/a>.&lt;/p>
+&lt;h1 id="s2s-struct-to-stream--stream-to-struct">s2s: struct to stream | stream to struct&lt;/h1>
+&lt;p>&lt;a href="https://github.com/MasterQ32">@MasterQ32&lt;/a> released an excellent binary serialization library, &lt;a href="https://github.com/ziglibs/s2s">ziglibs/s2s&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;ul>
+&lt;li>Convert (nearly) any Zig runtime datatype to binary data and back.&lt;/li>
+&lt;li>Computes a stream signature that prevents deserialization of invalid data.&lt;/li>
+&lt;li>No support for graph like structures. Everything is considered to be tree data.&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/158045305-8ab0f991-51fc-4101-ba7e-15ddf9ec69bb.png">&lt;img height="340px" src="https://user-images.githubusercontent.com/3173176/158045305-8ab0f991-51fc-4101-ba7e-15ddf9ec69bb.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="mustache-logic-less-template-rendering">Mustache logic-less template rendering&lt;/h1>
+&lt;p>&lt;a href="https://github.com/batiati">@batiati&lt;/a> is implementing logic-less &lt;a href="https://github.com/batiati/mustache-zig">Mustache template rendering&lt;/a> so your Zig code can render template strings like &lt;code>Hello {{name}} from Zig&lt;/code>.&lt;/p>
+&lt;h1 id="2-day-meetup-in-milan-italy-apr-9-10">2-day meetup in Milan, Italy. Apr 9-10&lt;/h1>
+&lt;p>The first ever European Zig meetup is happening Apr 9-10 in Milan, Italy! If you&amp;rsquo;d like to attend, there&amp;rsquo;s plenty of room - &lt;a href="https://zig.news/kristoff/zig-milan-party-2022-final-info-schedule-1jc1">you can find more information here&lt;/a>&lt;/p>
+&lt;h1 id="thanks-for-reading">Thanks for reading!&lt;/h1>
+&lt;p>If you like my work on zigmonthly, &lt;a href="https://devlog.hexops.com/categories/mach">Mach engine&lt;/a>, etc. consider &lt;a href="https://github.com/sponsors/slimsag">sponsoring me on GitHub&lt;/a> so I can do even more of it!&lt;/p></description></item></channel></rss>

@@ -1,6 +1,6 @@
 ---
 title: "Zig monthly, January 2022: Lua bindings, stage2 work, gamedev, and tons of new libraries"
-date: 2022-01-30T00:00:00-07:00
+date: 2022-02-08T19:10:39-07:00
 draft: false
 images: ["https://user-images.githubusercontent.com/3173176/153108292-db1f0981-af4d-4537-8032-f18e51a58d1e.png"]
 ---

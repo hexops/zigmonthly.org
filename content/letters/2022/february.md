@@ -1,6 +1,6 @@
 ---
 title: "Zig monthly, February 2022: Language interoperability keeps getting better"
-date: 2022-02-30T00:00:00-07:00
+date: 2022-03-12T23:51:50-07:00
 draft: false
 images: ["https://user-images.githubusercontent.com/3173176/158046724-d423ec00-db66-4346-be54-257a59082b52.png"]
 ---

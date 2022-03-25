@@ -1,6 +1,6 @@
 ---
 title: "Zig monthly, August 2021: iOS support, tutorials, tree-sitter, a pathtracer, and more"
-date: 2021-08-01T03:00:00-07:00
+date: 2021-08-11T02:17:29-07:00
 draft: false
 images: ["https://user-images.githubusercontent.com/3173176/128805441-9f809577-7182-475a-9916-f26b93ed1635.png"]
 ---

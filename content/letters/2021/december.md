@@ -1,6 +1,6 @@
 ---
 title: "Zig monthly, December 2021: GUI, NodeJS modules, optional GC & more"
-date: 2021-12-31T00:00:00-07:00
+date: 2022-01-05T17:47:10-07:00
 draft: false
 images: ["https://user-images.githubusercontent.com/3173176/148187357-381b3b33-bc2b-4243-a704-6c21a65f5b26.png"]
 ---

@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Letters on Zig monthly</title><link>https://zigmonthly.org/letters/</link><description>Recent content in Letters on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 01 Apr 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/letters/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig monthly, March 2022: io_uring, physics, chess, gamedev &amp; scripting languages</title><link>https://zigmonthly.org/letters/2022/march/</link><pubDate>Fri, 01 Apr 2022 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2022/march/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/162355131-07d263f8-bb28-4946-adca-ad1444532eca.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/162355131-07d263f8-bb28-4946-adca-ad1444532eca.png">&lt;/img>&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Letters on Zig monthly</title><link>https://zigmonthly.org/letters/</link><description>Recent content in Letters on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 12 May 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/letters/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig monthly, April 2022: OS interop, Graphics, WebAssembly, Talks, Wren language &amp; more</title><link>https://zigmonthly.org/letters/2022/april/</link><pubDate>Thu, 12 May 2022 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2022/april/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/168130228-0b0e9736-97fa-44d2-a020-896bb4aa6105.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/168130228-0b0e9736-97fa-44d2-a020-896bb4aa6105.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="nanovg-zig">nanovg-zig&lt;/h1>
+&lt;p>&lt;a href="https://github.com/fabioarnold">@fabioarnold&lt;/a> has released nanovg-zig:&lt;/p>
+&lt;blockquote>
+&lt;p>A hardware-accelerated vector graphics library. I use this library to build the user interface of my (free) &lt;a href="https://fabioarnold.itch.io/mini-pixel">pixel art editor MiniPixel&lt;/a>. I&amp;rsquo;ve since rewritten it in Zig and ported it to Wasm/WebGL.&lt;/p>
+&lt;p>You can use it to draw (blurred) text, arbitrary bezier curved shapes (with holes) and of course gradients. You can try the &lt;a href="https://fabioarnold.github.io/nanovg-zig/">WebAssembly example here&lt;/a> and find &lt;a href="https://github.com/fabioarnold/nanovg-zig">the source on GitHub here&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/167889348-9b8aa3aa-39f3-487f-914e-833995944146.mov" controls="controls" muted="muted">
+&lt;a href="https://user-images.githubusercontent.com/3173176/167889348-9b8aa3aa-39f3-487f-914e-833995944146.mov">
+&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/168127948-d3f7ae2a-8425-4c1e-85ee-8415282331f4.png">&lt;/img>
+&lt;/a>
+&lt;/video>
+&lt;h1 id="wala-a-language-to-simplify-webassembly-text-syntax">wala: A language to simplify WebAssembly Text syntax&lt;/h1>
+&lt;p>&lt;a href="https://github.com/CalmSystem/wala">wala&lt;/a> is a language trying to simplify WebAssembly Text syntax &amp;ldquo;while keeping the full expressiveness and retro-compatibility. Unwittingly becoming a Zig toolchain for WASM. - It aims to be for WASM what YAML is for JSON.&amp;rdquo;&lt;/p>
+&lt;pre>&lt;code class="language-wala" data-lang="wala">func $fib export()
+u64 $n -&amp;gt; ?
+if {$n &amp;lt;= 2}
+1
++
+$fib{$n - 2}
+$fib{$n - 1}
+&lt;/code>&lt;/pre>&lt;p>&lt;a href="https://github.com/CalmSystem">@CalmSystem&lt;/a> cautions:&lt;/p>
+&lt;blockquote>
+&lt;p>This is my first zig project [&amp;hellip;] FizzBuzz and others are already working, but some work is still needed before the first proper release.&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="tile-based-multithreaded-3d-software-renderer">Tile-based, multithreaded 3D software renderer&lt;/h1>
+&lt;p>&lt;a href="https://github.com/danielabbott">@danielabbott&lt;/a> created &lt;a href="https://github.com/danielabbott/Software-Renderer">a simple software renderer in Zig&lt;/a>, a cool codebase to learn from if you&amp;rsquo;re into that sort of thing:&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/167912515-e7c0c8ea-68df-4929-860f-e34c1063e0de.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/167912515-e7c0c8ea-68df-4929-860f-e34c1063e0de.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="simple-bin-packed-texture-atlas">Simple bin-packed texture atlas&lt;/h1>
+&lt;p>&lt;a href="https://github.com/mitchellh">@mitchellh&lt;/a> dropped &lt;a href="https://gist.github.com/mitchellh/0c023dbd381c42e145b5da8d58b1487f">a gist&lt;/a> which provides a simple packed texture atlas in pure Zig, with no dependencies other than the stdlib.&lt;/p>
+&lt;h1 id="zlog-zero-allocation-logging">zlog: Zero-Allocation Logging&lt;/h1>
+&lt;p>Inspired by Go&amp;rsquo;s zerolog, &lt;a href="https://github.com/candrewlee14">@candrewlee14&lt;/a> has released &lt;a href="https://github.com/candrewlee14/zlog">zlog&lt;/a>, a zero-allocation logging library.&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/167915298-e1615354-f500-46c1-8e8f-fe5f2ec0c63b.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/167915298-e1615354-f500-46c1-8e8f-fe5f2ec0c63b.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="bindings-for-wren-a-small-fast-class-based-concurrent-scripting-language">Bindings for Wren (&amp;ldquo;a small, fast, class-based concurrent scripting language&amp;rdquo;)&lt;/h1>
+&lt;p>&lt;a href="https://github.com/dantecatalfamo">@dantecatalfamo&lt;/a> released &lt;a href="https://github.com/dantecatalfamo/wren-zig">wren-zig&lt;/a> which provides Zig bindings to &lt;a href="https://wren.io">Wren&lt;/a>, a fast lua-sized scripting language with classes and concurrency.&lt;/p>
+&lt;pre>&lt;code class="language-wren" data-lang="wren">System.print(&amp;quot;Hello, world!&amp;quot;)
+class Wren {
+flyTo(city) {
+System.print(&amp;quot;Flying to %(city)&amp;quot;)
+}
+}
+var adjectives = Fiber.new {
+[&amp;quot;small&amp;quot;, &amp;quot;clean&amp;quot;, &amp;quot;fast&amp;quot;].each {|word| Fiber.yield(word) }
+}
+while (!adjectives.isDone) System.print(adjectives.call())
+&lt;/code>&lt;/pre>&lt;p>(If you like that, you may also be interested in &lt;a href="https://github.com/giann/buzz">Buzz&lt;/a>, &amp;ldquo;a small/lightweight typed scripting language written in Zig&amp;rdquo;, from last month&amp;rsquo;s article.)&lt;/p>
+&lt;h1 id="snowflake-simulator">snowflake simulator&lt;/h1>
+&lt;p>&lt;img src="https://github.com/Rekihyt" alt="@Rekihyt"> has built a &lt;a href="https://github.com/Rekihyt/snow">simple snowflake simulator&lt;/a> using OpenGL:&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/167920253-999344b2-3fdc-46d0-8525-cdb2f2be53e8.gif">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/167920253-999344b2-3fdc-46d0-8525-cdb2f2be53e8.gif">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="zig-arg-cli-flags-subcommands--nested-subcommands">zig-arg: CLI flags, subcommands &amp;amp; nested subcommands&lt;/h1>
+&lt;p>&lt;a href="https://github.com/PrajwalCH/zig-arg">zig-arg&lt;/a> is a &lt;a href="https://github.com/clap-rs/clap">clap-rs&lt;/a> inspired Command Line Argument parser for Zig which support flags, subcommand and nested subcommands out of the box.&lt;/p>
+&lt;p>It looks quite slick, check out the &lt;a href="https://www.reddit.com/r/Zig/comments/u4bjrq/github_prajwalchzigarg_arg_parser_library_for_zig/">Reddit discussion&lt;/a> for some alternatives as well.&lt;/p>
+&lt;h1 id="zig-milan-party-2023-talks">Zig MiLAN Party 2023 talks&lt;/h1>
+&lt;p>The first-ever European Zig meetup was held in Milan, Italy - the Zig MiLAN Party! Here were some of the talks presented/recorded:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.reddit.com/r/Zig/comments/u4z46t/zig_milan_party_2023_zig_roadmap_2023_andrew/">⚡ Zig Roadmap 2023 - Andrew Kelley&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=bJNSPZTLMUU">iOS DX With Zig - Jakub Konka&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=m3gOX26LOeM">Mach game engine, what&amp;rsquo;s next (2022) - Stephen Gutekanst&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h1 id="windows-explorer-integration-in-zig">Windows explorer integration in Zig&lt;/h1>
+&lt;p>Ever wondered how applications on Windows integrate with the right-click menu, and overlay their own pixels on files in the explorer? &lt;a href="https://github.com/squeek502">@squeek502&lt;/a>&amp;rsquo;s new &lt;a href="https://github.com/squeek502/watchedoverlay">watchedoverlay&lt;/a> project does just that, giving you the ability to right-click -&amp;gt; &amp;ldquo;Toggle watched&amp;rdquo; which renders a &amp;ldquo;Watched&amp;rdquo; green checkmark over files:&lt;/p>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/167921403-a1347523-d419-48fd-9fff-d490c527fef1.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/167921403-a1347523-d419-48fd-9fff-d490c527fef1.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="jakub-konkas-work-on-ios-developer-experience">Jakub Konka&amp;rsquo;s work on iOS developer experience&lt;/h1>
+&lt;p>I&amp;rsquo;m ecstatic this work is ongoing, so I had to include this! This work isn&amp;rsquo;t complete or very usable currently, as Jakub cautions below, but here are three repositories you may want to keep an eye on if you&amp;rsquo;re interested in the future Zig developer experience for iOS app development:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/kubkon/ZigKit">https://github.com/kubkon/ZigKit&lt;/a> &amp;lsquo;will hopefully become a goto lib for low-level Apple frameworks bindings in Zig&amp;rsquo;&lt;/li>
+&lt;li>&lt;a href="https://github.com/kubkon/zignature">https://github.com/kubkon/zignature&lt;/a> &amp;lsquo;the goto solution for codesigning your Apple apps with Zig (hopefully without even requiring access to frameworks, but time will tell if that is even possible)&amp;rsquo;&lt;/li>
+&lt;li>&lt;a href="https://github.com/kubkon/zig-deploy">https://github.com/kubkon/zig-deploy&lt;/a> &amp;lsquo;the final piece of the puzzle [&amp;hellip;] it uses ZigKit internally for low-level Apple bindings, including the undocumented and private framework MobileDevice which is used by Xcode (and oss tool ios-deploy) to speak to an Apple device such as an iPhone.&amp;rsquo;&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Early days, and I strongly advise against using zig-deploy - wouldn&amp;rsquo;t want anyone to brick their phone! Having said that, any questions about any of this, you know where to find me!&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="fast-polygon-tesselator">fast polygon tesselator&lt;/h1>
+&lt;video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/167927619-b6e67976-7cf5-4ea7-87ca-65ddefcd9418.mp4" controls="controls" muted="muted">
+&lt;a href="https://user-images.githubusercontent.com/3173176/167927619-b6e67976-7cf5-4ea7-87ca-65ddefcd9418.mp4">
+&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/168122810-90dbeff6-6e41-41c1-b6da-df62d994f699.png">&lt;/img>
+&lt;/a>
+&lt;/video>
+&lt;blockquote>
+&lt;p>I wrote a fast polygon tessellator (triangulates in one pass) in pure zig which can be used for vector graphics.&lt;/p>
+&lt;p>It&amp;rsquo;s able to handle complex cases and can draw the tiger head svg. This video shows what it&amp;rsquo;s doing to fill a whisker of the tiger. The &lt;a href="https://github.com/fubark/cosmic/blob/master/tools/visual-tess.js">demo app is here&lt;/a> and the &lt;a href="https://github.com/fubark/cosmic/blob/master/graphics/src/tessellator.zig">zig implementation is here&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;p>Be sure to check out the &lt;a href="https://www.reddit.com/r/Zig/comments/u8bhto/polygon_tessellator_in_zig/">discussion on Reddit&lt;/a>, too, which goes into further detail about how it works:&lt;/p>
+&lt;blockquote>
+&lt;p>The vertices are chosen from a vertex queue similar to the y-monotone triangulation so most of the algorithm is making sure that each sub-polygon span is a y-monotone. And determining which regions to fill triangles depends on the winding rule. Currently, this tessellator does the evenodd fill rule but it shouldn&amp;rsquo;t be too hard to add the nonzero fill rule. :)&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="the-zig-compiler-can-finally-build-itself">The Zig compiler can finally build itself&lt;/h1>
+&lt;p>In case you missed it, the Zig self-hosted compiler has had a great deal of progress and &lt;a href="https://news.ycombinator.com/item?id=31052029">can finally build itself&lt;/a>.&lt;/p>
+&lt;p>This is a huge milestone for Zig, and while &lt;a href="https://github.com/ziglang/zig/issues/89">there&amp;rsquo;s still much work to do&lt;/a> before the new compiler can be shipped to everyone - it&amp;rsquo;s looking like we&amp;rsquo;ll be able to have Zig-implemented-in-Zig (rather than C++) very soon which should lead to an explosion of improvements and new contributors.&lt;/p>
+&lt;p>Exciting times!&lt;/p>
+&lt;h1 id="mach-engine-updates">Mach engine updates&lt;/h1>
+&lt;p>With Mach we&amp;rsquo;ve seen quite a burst of contributors! Thanks to @johanfforsberg, @d3m1gd, @zargio, @andoryuuta and more we&amp;rsquo;ve now got &lt;a href="https://machengine.org/gpu/">a great WebGPU example showcase&lt;/a> showing off low-level graphics and a great starting point for anyone interested in learning WebGPU with Zig:&lt;/p>
+&lt;video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/167927458-819a6c65-42c5-497a-8b97-8f0ec7021560.mov" controls="controls" muted="muted">
+&lt;a href="https://user-images.githubusercontent.com/3173176/167927458-819a6c65-42c5-497a-8b97-8f0ec7021560.mov">
+&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/168124468-ee9ade92-75eb-48ed-ab54-4b9890e4f9eb.png">&lt;/img>
+&lt;/a>
+&lt;/video>
+&lt;p>There&amp;rsquo;s also major work underway by &lt;a href="https://github.com/iddev5">@iddev5&lt;/a> to add Browser WebAssembly support-making Mach even more cross-platform, as well as &lt;a href="https://github.com/PiergiorgioZagaria">@PiergiorgioZagaria&lt;/a>&amp;rsquo;s work to create a ShaderToy-esque application called &lt;a href="https://github.com/hexops/mach/tree/main/shaderexp">&lt;code>shaderexp&lt;/code>&lt;/a> which live-reloads WGSL shaders as you save in your editor.&lt;/p>
+&lt;h1 id="gltf-20-in-pure-zig">glTF 2.0 in pure Zig&lt;/h1>
+&lt;p>&lt;a href="https://github.com/kooparse">@kooparse&lt;/a> has been working on &lt;a href="https://github.com/kooparse/gltf">a pure Zig parser for glTF 2.0&lt;/a>:&lt;/p>
+&lt;blockquote>
+&lt;p>Loading 3D models fully in Zig, without any parser/loader in other languages would be great, so I made a glTF 2.0 parser. I&amp;rsquo;m using it on my engine, and it works well enough for others' project usage (I guess). There are also some helpers to get local and global positions of each node and something to load data from binary. &amp;lsquo;Hope it could help some! 🙂&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="zig-gamedev-updates">zig-gamedev updates&lt;/h1>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/168126644-1e60f480-3597-4278-82d4-964fd3d6bd78.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/168126644-1e60f480-3597-4278-82d4-964fd3d6bd78.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://github.com/michal-z">@michal-z&lt;/a> is at it again, this time leveraging &lt;a href="https://machengine.org/gpu">mach/gpu&lt;/a> to bring his work to Windows/Linux/macOS:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/michal-z/zig-gamedev/tree/main/samples/triangle_wgpu">triangle_wgpu&lt;/a> is a simple but fairly complete app showing the ins-and-outs of WebGPU, creating bind group layouts, render peipelines, managing vertex/index/uniform buffers, depth buffers, etc.&lt;/li>
+&lt;li>&lt;a href="https://github.com/michal-z/zig-gamedev/tree/main/samples/procedural_mesh_wgpu">procedural_mesh_wgpu&lt;/a> leverages his zmesh library to efficiently draw several procedurally generated meshes, use simple physically-based shading, camera movement, and more.&lt;/li>
+&lt;li>Speaking of &lt;a href="https://github.com/michal-z/zig-gamedev/tree/main/libs/zmesh">&lt;code>zmesh&lt;/code>&lt;/a>, v0.2 is out. It&amp;rsquo;s a small library/bindings for loading, generating, processing and optimizing triangle meshes - using par_shapes, meshoptimizer, and cgltf behind the scenes.&lt;/li>
+&lt;/ul>
+&lt;h1 id="brucelib-updates">brucelib updates&lt;/h1>
+&lt;p>You might also want to keep an eye on &lt;a href="https://github.com/hazeycode">@hazeycode&lt;/a>&amp;rsquo;s &lt;a href="https://github.com/hazeycode/brucelib">brucelib&lt;/a> - although early stages, work continues and it&amp;rsquo;s recently gained &lt;a href="https://github.com/hazeycode/brucelib/blob/main/modules/audio/README.md">an audio module&lt;/a> which provides a basic mixer and wav file loader!&lt;/p>
+&lt;h1 id="thanks-for-reading">Thanks for reading!&lt;/h1>
+&lt;p>If you like my work on zigmonthly, &lt;a href="https://devlog.hexops.com/categories/mach">Mach engine&lt;/a>, etc. consider &lt;a href="https://github.com/sponsors/slimsag">sponsoring me on GitHub&lt;/a> so I can do even more of it!&lt;/p></description></item><item><title>Zig monthly, March 2022: io_uring, physics, chess, gamedev &amp; scripting languages</title><link>https://zigmonthly.org/letters/2022/march/</link><pubDate>Fri, 01 Apr 2022 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2022/march/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/162355131-07d263f8-bb28-4946-adca-ad1444532eca.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/162355131-07d263f8-bb28-4946-adca-ad1444532eca.png">&lt;/img>&lt;/a>&lt;/p>
 &lt;h1 id="asynciouring">AsyncIOUring&lt;/h1>
 &lt;p>&lt;a href="https://github.com/saltzm">@saltzm&lt;/a> released &lt;a href="https://github.com/saltzm/async_io_uring">AsyncIOUring&lt;/a> - an event loop that wraps the &lt;code>IO_Uring&lt;/code> library with coroutines support.&lt;/p>
 &lt;p>For context: &lt;code>io_uring&lt;/code> is a new-ish Linux kernel feature which allows for &lt;strong>much more efficient network/file IO&lt;/strong>. Zig has an &lt;code>IO_Uring&lt;/code> library that is a convenient interface to the Linux API.&lt;/p>
@@ -654,4 +768,5 @@ for Burrito. I was involved, but it&amp;rsquo;s really their project.&amp;quot;&
 &lt;li>&lt;a href="https://corecursive.com/067-zig-with-andrew-kelley/">Full-Time Open Source With Andrew Kelley&lt;/a> (podcast, transcribed)&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;p>Enjoying Zig monthly? Please consider &lt;a href="https://github.com/sponsors/slimsag">supporting my work&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>Enjoying Zig monthly? Please consider &lt;a href="https://github.com/sponsors/slimsag">supporting my work&lt;/a>&lt;/p></description></item><item><title/><link>https://zigmonthly.org/letters/2022/may/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zigmonthly.org/letters/2022/may/</guid><description>&lt;p>Continue starting at may 1st&lt;/p>
+&lt;p>&lt;a href="https://www.reddit.com/r/Zig/comments/uk1bnc/ui_engine_in_zig/">https://www.reddit.com/r/Zig/comments/uk1bnc/ui_engine_in_zig/&lt;/a>&lt;/p></description></item></channel></rss>

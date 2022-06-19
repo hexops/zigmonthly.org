@@ -8,6 +8,11 @@
   border-top: 1px solid $color-border;
   background: $color-footer-mobile-1;
   transition: opacity .2s;
+      
+  @media (prefers-color-scheme: dark) {
+    border-top: 1px solid $color-dark-border;
+    background: $color-dark-footer-mobile-1;
+  }
 
   a {
     background: none;
@@ -19,6 +24,10 @@
 
     &:hover {
       color: $color-link;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-link;
+      }
     }
   }
   #nav-footer {
@@ -27,12 +36,24 @@
     background: $color-footer-mobile-2;
     text-align: center;
 
+    @media (prefers-color-scheme: dark) {
+      background: $color-dark-footer-mobile-2;
+    }
+
     a {
       color: $color-accent-1;
       font-size: 1em;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-accent-1;
+      }
     }
     a:hover {
       @include underline(5px, $color-accent-1);
+
+      @media (prefers-color-scheme: dark) {
+        @include underline(5px, $color-dark-accent-1);
+      }
     }
     ul {
       display: table;
@@ -63,6 +84,10 @@
       display: inline-block;
       padding-left: 1rem;
       color: $color-accent-1;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-accent-1;
+      }
     }
   }
   #share-footer {
@@ -70,6 +95,10 @@
     padding-left: 1rem;
     background: $color-footer-mobile-2;
     text-align: center;
+
+    @media (prefers-color-scheme: dark) {
+      background: $color-dark-footer-mobile-2;
+    }
 
     ul {
       display: table;
@@ -93,6 +122,10 @@
     background: $color-footer-mobile-2;
     text-align: left;
 
+    @media (prefers-color-scheme: dark) {
+      background: $color-dark-footer-mobile-2;
+    }
+
     #TableOfContents {
       ul {
         margin: 0;
@@ -106,6 +139,10 @@
     }
     a:hover {
       color: $color-link;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-link;
+      }
     }
     // .toc-level-1 > .toc-link
     //   display: none
@@ -114,16 +151,28 @@
       color: $color-text;
       font-size: .8rem;
 
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-text;
+      }
+
       &:before {
         color: $color-accent-1;
         content: "#";
         margin-right: 8px;
+
+        @media (prefers-color-scheme: dark) {
+          color: $color-dark-accent-1;
+        }
       }
     }
     #TableOfContents > ul > li > ul > li {
       color: $color-meta;
       font-size: .7rem;
       line-height: 15px;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-meta;
+      }
 
       &:before {
         color: $color-accent-1;
@@ -132,6 +181,10 @@
         font-weight: bold;
 
         margin-right: 3px;
+
+        @media (prefers-color-scheme: dark) {
+          color: $color-dark-accent-1;
+        }
       }
     }
     #TableOfContents > ul > li > ul > li > ul > li {

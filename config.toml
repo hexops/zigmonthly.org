@@ -5,7 +5,7 @@ theme = "cactus"
 
 [params]
 description = "_Curated Zig news brought to you by [@slimsag](https://github.com/slimsag) each month_"
-colortheme = "dark"
+colortheme = "auto"
 css = ["css/custom.css"]
 mainSection = "letters"
 mainSectionTitle = "Past letters"

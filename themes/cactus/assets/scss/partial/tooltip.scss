@@ -23,6 +23,11 @@
   background: $color-text;
   border-radius: 3px;
   opacity: 0;
+      
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-background;
+    background: $color-dark-text;
+  }
 }  
 // This is the tooltip arrow
 .tooltipped::before {
@@ -36,6 +41,10 @@
   content: '';
   border: 6px solid transparent;
   opacity: 0;
+      
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-text;
+  }
 }  
 // delay animation for tooltip
 @keyframes tooltip-appear {
@@ -75,6 +84,10 @@
     bottom: -7px;
     margin-right: -6px;
     border-bottom-color: $color-text;
+      
+    @media (prefers-color-scheme: dark) {
+      border-bottom-color: $color-dark-text;
+    }
   }
 }
 .tooltipped-sw::after {

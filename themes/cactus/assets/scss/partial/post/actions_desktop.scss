@@ -16,6 +16,10 @@
 
     &:hover {
       color: $color-link;
+      
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-link;
+      }
     }
   }
   nav {
@@ -65,6 +69,10 @@
 
     &:hover {
       color: $color-accent-1;
+      
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-accent-1;
+      }
     }
   }
   #menu-icon-tablet {
@@ -74,6 +82,10 @@
 
     &:hover {
       color: $color-accent-1;
+      
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-accent-1;
+      }
     }
   }
   #top-icon-tablet {
@@ -85,10 +97,18 @@
 
     &:hover {
       color: $color-accent-1;
+      
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-accent-1;
+      }
     }
   }
   .active {
     color: $color-accent-1;
+      
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-accent-1;
+    }
   }
   #menu {
     visibility: hidden;
@@ -100,6 +120,10 @@
     font-weight: 200;
     font-style: normal;
     font-size: .8rem;
+      
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-accent-1;
+    }
 
     ul {
       line-height: 15px;
@@ -110,9 +134,17 @@
       }
       a:hover {
         @include underline(5px, $color-accent-1);
+      
+        @media (prefers-color-scheme: dark) {
+          @include underline(5px, $color-dark-accent-1);
+        }
       }
       li {
         border-right: 1px dotted $color-accent-1;
+      
+        @media (prefers-color-scheme: dark) {
+          border-right: 1px dotted $color-dark-accent-1;
+        }
       }
       li:last-child {
         margin-right: 0;
@@ -162,6 +194,10 @@
 
     a:hover {
       color: $color-link;
+      
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-link;
+      }
     }
     // .toc-level-1 > .toc-link
     //   display: none
@@ -169,27 +205,47 @@
     nav > ul > li {
       color: $color-text;
       font-size: .8rem;
+      
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-text;
+      }
 
       &:before {
         color: $color-accent-1;
         content: "#";
         margin-right: 8px;
+      
+        @media (prefers-color-scheme: dark) {
+          color: $color-dark-accent-1;
+        }
       }
     }
     nav > ul > li > ul > li {
       color: $color-meta;
       font-size: .7rem;
+      
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-meta;
+      }
 
       &:before {
         color: $color-accent-1;
         content: "·";
         font-weight: bold;
         margin-right: 3px;
+      
+        @media (prefers-color-scheme: dark) {
+          color: $color-dark-accent-1;
+        }
       }
     }
     nav > ul > li > ul > li > ul > li {
       color: darken($color-meta, 20%);
       font-size: .4rem;
+      
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-meta;
+      }
     }
     .toc-level-5 {
       display: none;

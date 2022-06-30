@@ -7,6 +7,10 @@
   vertical-align: top;
   text-align: center;
   font-size: 11px;
+      
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-meta;
+  }
 
   ul {
     margin: 0;
@@ -19,6 +23,10 @@
     border-right: 1px solid;
     border-color: $color-border;
     vertical-align: middle;
+      
+    @media (prefers-color-scheme: dark) {
+      border-color: $color-dark-border;
+    }
 
     a {
       margin-right: 15px;
@@ -36,9 +44,17 @@
     color: $color-meta;
     text-decoration: underline;
     background-image: none;
+      
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-meta;
+    }
   }
   a:hover {
     color: lighten($color-meta, 20%);
+      
+    @media (prefers-color-scheme: dark) {
+      color: lighten($color-dark-meta, 20%);
+    }
   }
   .footer-left {
     height: 20px;

@@ -1,11 +1,19 @@
 #categories {
   .category-list-title {
     color: $color-meta;
+      
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-meta;
+    }
   }
   .category-list {
     .category-list-item {
       .category-list-count {
         color: $color-meta;
+      
+        @media (prefers-color-scheme: dark) {
+          color: $color-dark-meta;
+        }
       }
       .category-list-count:before {
         content: " (";

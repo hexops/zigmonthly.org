@@ -9,9 +9,18 @@
   font-size: 1.2rem;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+      
+  @media (prefers-color-scheme: dark) {
+    border: solid 1px $color-dark-accent-3;
+    background-color: $color-dark-background;
+  }
 
   &:focus {
     border: solid 1px $color-accent-1;
+      
+    @media (prefers-color-scheme: dark) {
+      border: solid 1px $color-dark-accent-1;
+    }
   }
 }
 #search-result {
@@ -28,6 +37,10 @@
     text-transform: capitalize;
     font-weight: bold;
     line-height: 1.2;
+      
+    @media (prefers-color-scheme: dark) {
+      color: $color-dark-text;
+    }
   }
   p.search-result {
     overflow: hidden;
@@ -40,10 +53,18 @@
     border-bottom: 1px dashed $color-link;
     color: $color-link;
     font-weight: bold;
+      
+    @media (prefers-color-scheme: dark) {
+      border-bottom: 1px dashed $color-dark-link;
+    }
   }
 }
 .search-no-result {
   display: none;
   padding-bottom: .5em;
   color: $color-text;
+      
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-text;
+  }
 }

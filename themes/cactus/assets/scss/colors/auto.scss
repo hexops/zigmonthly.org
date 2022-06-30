@@ -1,0 +1,27 @@
+$color-background: #FFFFFF;
+$color-footer-mobile-1: darken($color-background, 2%);
+$color-footer-mobile-2: darken($color-background, 10%);
+$color-background-code: darken($color-background, 2%);
+$color-border: #666;
+$color-meta: #666;
+$color-meta-code: lighten($color-meta, 10%);
+$color-link: rgba(212, 128, 170, 1);
+$color-text: #383838;
+$color-accent-3: #8c8c8c;
+$color-accent-2: #383838;
+$color-accent-1: #2bbc8a;
+$color-quote: #2bbc8a;
+
+$color-dark-background: #1d1f21;
+$color-dark-footer-mobile-1: lighten($color-background, 2%);
+$color-dark-footer-mobile-2: lighten($color-background, 10%);
+$color-dark-background-code: lighten($color-background, 2%);
+$color-dark-border: #666;
+$color-dark-meta: #666;
+$color-dark-meta-code: #666;
+$color-dark-link: rgba(212, 128, 170, 1);
+$color-dark-text: #c9cacc;
+$color-dark-accent-3: #cccccc;
+$color-dark-accent-2: #eeeeee;
+$color-dark-accent-1: #2bbc8a;
+$color-dark-quote: #ccffb6;

@@ -14,6 +14,10 @@ article {
     .meta * {
       color: $color-accent-3;
       font-size: .85rem;
+      
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-accent-3;
+      }
     }
     .author {
       text-transform: uppercase;
@@ -34,6 +38,10 @@ article {
         content: "#";
         font-weight: bold;
         font-size: 1.2rem;
+      
+        @media (prefers-color-scheme: dark) {
+          color: $color-dark-accent-1;
+        }
       }
     }
   }
@@ -70,6 +78,10 @@ article {
       color: $color-quote;
       quotes: "\201C" "\201D" "\2018" "\2019";
       font-weight: bold;
+      
+      @media (prefers-color-scheme: dark) {
+        color: $color-dark-quote;
+      }
 
       p {
         margin: 0;
@@ -81,19 +93,37 @@ article {
         vertical-align: -.4em;
         font-size: 2em;
         line-height: .1em;
+      
+        @media (prefers-color-scheme: dark) {
+          color: $color-dark-quote;
+        }
       }
       footer {
         margin: line-height 0;
         color: $color-meta;
         font-size: 11px;
+      
+        @media (prefers-color-scheme: dark) {
+          color: $color-dark-meta;
+        }
 
         a {
           background-image: linear-gradient(transparent, transparent 5px, $color-meta 5px, $color-meta);
           color: $color-meta;
+      
+          @media (prefers-color-scheme: dark) {
+            background-image: linear-gradient(transparent, transparent 5px, $color-dark-meta 5px, $color-dark-meta);
+            color: $color-dark-meta;
+          }
         }
         a:hover {
           background-image: linear-gradient(transparent, transparent 4px, lighten($color-meta, 20%) 4px, lighten($color-meta, 20%));
           color: lighten($color-meta, 20%);
+      
+          @media (prefers-color-scheme: dark) {
+            background-image: linear-gradient(transparent, transparent 4px, lighten($color-dark-meta, 20%) 4px, lighten($color-dark-meta, 20%));
+            color: $color-dark-meta;
+          }
         }
         cite {
           &:before {
@@ -137,12 +167,20 @@ article {
     &:before {
       content: "#";
       @include underline(10px, $color-link);
+      
+      @media (prefers-color-scheme: dark) {
+        @include underline(10px, $color-dark-link);
+      }
     }
   }
 }
 .article-category {
   .category-link {
     @include underline(10px, $color-link);
+      
+    @media (prefers-color-scheme: dark) {
+      @include underline(10px, $color-dark-link);
+    }
   }
 }
 @media (min-width: 480px) {

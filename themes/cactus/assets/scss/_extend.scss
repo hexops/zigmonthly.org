@@ -9,6 +9,10 @@ h1,
   font-style: normal;
   font-size: 1.5em;
 
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-accent-1;
+  }
+
   @include antialias();
 }
 h2,
@@ -22,12 +26,20 @@ h2,
   letter-spacing: normal;
   font-weight: bold;
   font-size: 1rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-accent-2;
+  }
 }
 h3 {
   color: $color-accent-2;
   text-decoration: underline;
   font-weight: bold;
   font-size: .9rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-accent-2;
+  }
 }
 h4
 h5
@@ -37,6 +49,10 @@ h6 {
   color: $color-accent-3;
   font-weight: bold;
   font-size: .9rem;
+
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-accent-3;
+  }
 }
 h3
 h4
@@ -51,6 +67,10 @@ hr {
   margin: 0;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @media (prefers-color-scheme: dark) {
+    color: $color-dark-accent-3;
+  }
 }
 strong {
   font-weight: bold;
@@ -111,6 +131,11 @@ th {
   color: $color-accent-2;
   font-weight: bold;
   font-size: $font-size - 1px;
+
+  @media (prefers-color-scheme: dark) {
+    border-bottom: 1px dashed $color-dark-border;
+    color: $color-dark-accent-2;
+  }
 }
 td {
   padding: 0 8px;

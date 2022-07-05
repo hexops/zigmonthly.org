@@ -1,5 +1,5 @@
 ---
-title: "Zig is becoming more production-worthy"
+title: "Zig is becoming more production-worthy (zigmonthly)"
 date: 2022-07-04T00:00:00-07:00
 draft: false
 images: ["https://user-images.githubusercontent.com/3173176/177217687-b47d897a-2516-4df8-b0df-de120552fc53.png"]
@@ -31,7 +31,7 @@ The multi-year effort to switch away from Zig's old stage1 C++ compiler to the n
 
 Although it's not ready for prime time yet, and not advised to test with it yet as many bugs are already known, we're already seeing [it can compile parts of some major projects with a bit of finangling](https://github.com/hexops/mach/issues/180).
 
-### Here's why stage2 is such an important milestone
+## Here's why stage2 is such an important milestone
 
 * Once the compiler is written in Zig, a large portion of the community that wouldn't have been able/willing to dive into a C++ codebase before will now be able to help out.
 * It will fix _numerous_ known issues, especially around comptime - enabling some new interesting ways of using Zig metaprogramming.
@@ -68,7 +68,7 @@ It's a new conference being ran by Loris Cro (VP of Community) and will be held 
 
 Full schedule will come out soon, and early bird pricing ends soon so [get your tickets now](https://sycl.it/tickets)!
 
-# Article of the month: "How I built zig-sqlite"
+# Article of the month: How I built zig-sqlite
 
 ["How I built zig-sqlite"](https://rischmann.fr/blog/how-i-built-zig-sqlite) is an excellent read for anyone looking to get a better understanding of Zig's C interoperability as well as its powerful meta-programming capabilities.
 

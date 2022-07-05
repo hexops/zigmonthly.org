@@ -1,4 +1,101 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zig monthly</title><link>https://zigmonthly.org/</link><description>Recent content on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 12 May 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig monthly, April 2022: OS interop, Graphics, WebAssembly, Talks, Wren language &amp; more</title><link>https://zigmonthly.org/letters/2022/april/</link><pubDate>Thu, 12 May 2022 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2022/april/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/168130228-0b0e9736-97fa-44d2-a020-896bb4aa6105.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/168130228-0b0e9736-97fa-44d2-a020-896bb4aa6105.png">&lt;/img>&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zig monthly</title><link>https://zigmonthly.org/</link><description>Recent content on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 04 Jul 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig is becoming more production-worthy</title><link>https://zigmonthly.org/letters/2022/may-june/</link><pubDate>Mon, 04 Jul 2022 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2022/may-june/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/177217687-b47d897a-2516-4df8-b0df-de120552fc53.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/177217687-b47d897a-2516-4df8-b0df-de120552fc53.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;h1 id="how-zig-is-used-at-uber">How Zig is used at Uber&lt;/h1>
+&lt;a href="https://www.youtube.com/watch?v=SCj2J3HcEfc">
+&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/177207028-843df8cd-4638-487d-9916-997ac888295b.png">&lt;/img>
+&lt;/a>
+&lt;p>At the start of the year the Zig Software Foundation &lt;a href="https://ziglang.org/news/financials-update/">recieved&lt;/a> a small ~$50k USD support contract from Uber.&lt;/p>
+&lt;p>In this talk, Uber engineer Motiejus Jakštys describes developing bazel-zig-cc, a drop-in C/C++ toolchain for Bazel using Zig, how he onboarded Uber to use it, as well as how Google and CloudFlare also appear to be using it.&lt;/p>
+&lt;p>If you liked that, be sure to check out these articles:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://zig.news/kristoff/building-sqlite-with-cgo-for-every-os-4cic">Building SQLite with CGo for (almost) every OS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.reddit.com/r/Zig/comments/usm1ku/zgo_calling_zig_fnostage1_from_go/">ZGo: Calling Zig from Go&lt;/a>.&lt;/li>
+&lt;li>&lt;a href="https://renato.athaydes.com/posts/testing-building-c-with-zig.html">Testing and building C projects with Zig&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h1 id="stage2-compiler-rapidly-approaching">Stage2 compiler rapidly approaching&lt;/h1>
+&lt;p>&lt;a href="https://twitter.com/andy_kelley/status/1542667210602057728">&lt;img width="594" alt="image" src="https://user-images.githubusercontent.com/3173176/177212829-f859c9e0-7390-4689-8283-ca62e00cd7bf.png">&lt;/a>&lt;/p>
+&lt;p>The multi-year effort to switch away from Zig&amp;rsquo;s old stage1 C++ compiler to the new stage2 compiler written in Zig has really been progressing recently. (&lt;a href="https://github.com/ziglang/zig/issues/89">tracking issue #89&lt;/a>)&lt;/p>
+&lt;p>Although it&amp;rsquo;s not ready for prime time yet, and not advised to test with it yet as many bugs are already known, we&amp;rsquo;re already seeing &lt;a href="https://github.com/hexops/mach/issues/180">it can compile parts of some major projects with a bit of finangling&lt;/a>.&lt;/p>
+&lt;h3 id="heres-why-stage2-is-such-an-important-milestone">Here&amp;rsquo;s why stage2 is such an important milestone&lt;/h3>
+&lt;ul>
+&lt;li>Once the compiler is written in Zig, a large portion of the community that wouldn&amp;rsquo;t have been able/willing to dive into a C++ codebase before will now be able to help out.&lt;/li>
+&lt;li>It will fix &lt;em>numerous&lt;/em> known issues, especially around comptime - enabling some new interesting ways of using Zig metaprogramming.&lt;/li>
+&lt;li>The core team will then be able to begin thinking about:
+&lt;ul>
+&lt;li>Major language changes &amp;amp; what 1.0 might look like in the future&lt;/li>
+&lt;li>Exploring adding more safety to the language&lt;/li>
+&lt;li>Stabilizing the standard library&lt;/li>
+&lt;li>Exploring hot-code-swapping&lt;/li>
+&lt;li>Other performance wins&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="porting-my-game-to-the-web">&amp;ldquo;Porting my game to the web&amp;rdquo;&lt;/h1>
+&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/177208004-6d81933c-004e-4643-a20f-60f9bfd6f065.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/177208804-dc723209-c957-44ec-bc4c-945b2885f779.png">&lt;/img>&lt;/a>&lt;/p>
+&lt;p>Samarth Hattangady wrote &lt;a href="https://zig.news/samhattangady/porting-my-game-to-the-web-4194">an excellent article of their experience&lt;/a> porting their game to the web using Zig&amp;rsquo;s WASM support and WebGL.&lt;/p>
+&lt;p>They&amp;rsquo;re looking for playtesters, so be sure to download the game on &lt;a href="https://chapliboy.itch.io/pirates">itch.io&lt;/a> and give your feedback if it looks interesting to you!&lt;/p>
+&lt;h1 id="major-zig-conference-in-milan-italy">Major Zig conference in Milan, Italy&lt;/h1>
+&lt;p>This is a conference you don&amp;rsquo;t want to miss: &lt;a href="https://sycl.it">SYCL 22&lt;/a> (Oct 7-10):&lt;/p>
+&lt;blockquote>
+&lt;p>Software You Can Love, &lt;em>a conference that celebrates the art of creating software for humans&lt;/em>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://user-images.githubusercontent.com/3173176/177196710-139bef76-3aa2-4148-a7c4-4758ecef8b85.png" alt="image">&lt;/p>
+&lt;p>It&amp;rsquo;s a new conference being ran by Loris Cro (VP of Community) and will be held in Milan, Italy, Oct 7-10, and features:&lt;/p>
+&lt;ul>
+&lt;li>Keynote speech from Andrew Kelley, a talk from Richard Feldman (remote)&lt;/li>
+&lt;li>&lt;strong>Full day of Zig talks&lt;/strong>&lt;/li>
+&lt;li>Mi&lt;em>LAN&lt;/em> PARTY day, where people behind popular community projects like the Zig Embedded Group, etc. will be chatting in a casual LAN-party-like setting&lt;/li>
+&lt;li>SYCL Talks - The heart of the conference: Software You Can Love.&lt;/li>
+&lt;li>Workshops&lt;/li>
+&lt;/ul>
+&lt;p>Full schedule will come out soon, and early bird pricing ends soon so &lt;a href="https://sycl.it/tickets">get your tickets now&lt;/a>!&lt;/p>
+&lt;h1 id="article-of-the-month-how-i-built-zig-sqlite">Article of the month: &amp;ldquo;How I built zig-sqlite&amp;rdquo;&lt;/h1>
+&lt;p>&lt;a href="https://rischmann.fr/blog/how-i-built-zig-sqlite">&amp;ldquo;How I built zig-sqlite&amp;rdquo;&lt;/a> is an excellent read for anyone looking to get a better understanding of Zig&amp;rsquo;s C interoperability as well as its powerful meta-programming capabilities.&lt;/p>
+&lt;h1 id="cosmic-jswasm-runtime-developments">Cosmic JS/WASM runtime developments&lt;/h1>
+&lt;video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/177211171-f3e875a8-d4be-45b4-b6ca-dde75dbd7f15.mp4" controls="controls" muted="muted">
+&lt;a href="https://user-images.githubusercontent.com/3173176/177211171-f3e875a8-d4be-45b4-b6ca-dde75dbd7f15.mp4">
+&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/177210929-824f7ef5-6707-4623-8371-3fbd2eb1ba67.png">&lt;/img>
+&lt;/a>
+&lt;/video>
+&lt;p>What if you could develop native applications in JavaScript or WASM, with a runtime that is not Electron? &lt;a href="https://github.com/fubark/cosmic">Cosmic&lt;/a> is one answer to that, and a project to keep an eye on for sure:&lt;/p>
+&lt;blockquote>
+&lt;p>a general purpose runtime for Javascript and WASM.&lt;/p>
+&lt;p>It aims to have broad applications by exposing native cross platform APIs: window management, 2D/3D graphics, UI widgets, filesystem, networking, and more.&lt;/p>
+&lt;/blockquote>
+&lt;p>It recently gained &lt;a href="https://www.reddit.com/r/Zig/comments/v9mf32/vulkan_and_3d_graphics_in_cosmic/">3D model rendering via Vulkan&lt;/a>, &lt;a href="https://www.reddit.com/r/Zig/comments/ux95c8/updates_to_cosmic_graphics_text_ui/">Text and UI&lt;/a>, 3D animation, lighting, and PBR support (among other things):&lt;/p>
+&lt;h1 id="ecosystem">Ecosystem&lt;/h1>
+&lt;p>&lt;a href="https://allyourcodebase.com/">AllYourCodeBase.com&lt;/a> was launched as a sort of &amp;ldquo;are we X yet&amp;rdquo; for Zig, I helped contribute an excellent overview of the &lt;a href="https://allyourcodebase.com/gamedev/">Zig gamedev ecosystem&lt;/a> - check it out and contribute information to it, as well!&lt;/p>
+&lt;h2 id="project-highlights">Project highlights&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/zigimg/zigimg">zigimg&lt;/a> continues to get improvements, with support for JPEG, PNG, QOI, TGA and more image formats.&lt;/li>
+&lt;li>An IntelliJ and CLion Zig Support plugin, version 0.0.6, &lt;a href="https://zig.news/marioariasc/zig-support-plugin-for-intellij-and-clion-version-006-released-o68">was released.&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zig.news/lhp/easily-create-tui-programs-with-zig-spoon-project-demonstration-4k33">Easily create TUI programs with zig-spoon! (project demonstration)&lt;/a> by Leon Henrik Plickat showcases their new library for terminal UIs!&lt;/li>
+&lt;li>&lt;a href="https://twitter.com/karlseguin/status/1530558941758795776">websocket.zig&lt;/a>, a websocket server passing all (important) autobahn tests has been released!&lt;/li>
+&lt;li>&lt;a href="https://github.com/natecraddock/ziglua">ziglua&lt;/a> was released, which &amp;ldquo;takes advantage of Zig&amp;rsquo;s features to make it easier and safer to interact with the Lua API.&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;h2 id="article-highlights">Article highlights&lt;/h2>
+&lt;ul>
+&lt;li>An excellent article on how to &lt;a href="https://zig.news/lupyuen/build-an-iot-app-with-zig-and-lorawan-5c3m">build an IoT App with Zig and LoRaWAN&lt;/a> was written by Lup Yuen Lee&lt;/li>
+&lt;li>&lt;a href="https://www.reddit.com/r/Zig/comments/viuiup/the_missing_bit_testing_zig_for_embedded/">&amp;ldquo;Testing Zig for embedded development&amp;rdquo;&lt;/a>, an excellent article contrasting Zig and Rust for embedded development.&lt;/li>
+&lt;li>xq&amp;rsquo;s &lt;a href="https://zig.news/xq/cool-zig-patterns-305o">&amp;ldquo;Cool Zig Patterns&amp;rdquo; series&lt;/a> has continued, covering generics over array length, stable main loops, configuration parameters, and type identifiers.&lt;/li>
+&lt;li>&lt;a href="https://zig.news/guidorice/zigs-var-and-const-for-javascript-devs-3899">&amp;ldquo;Zig&amp;rsquo;s var and const for JavaScript devs&amp;rdquo;&lt;/a> was published by Alex G Rice.&lt;/li>
+&lt;li>&lt;a href="https://www.reddit.com/r/Zig/comments/vll04j/an_intro_to_zigs_checkallallocationfailures/">&amp;ldquo;An Intro to Zig&amp;rsquo;s checkAllAllocationFailures&amp;rdquo;&lt;/a> detailing a strategy for testing OOM failures in Zig&lt;/li>
+&lt;li>zig-gamedev &lt;a href="https://github.com/michal-z/zig-gamedev/wiki/Progress-Reports#may-2022">May 2022&lt;/a> and &lt;a href="https://github.com/michal-z/zig-gamedev/wiki/Progress-Reports#june-2022">June 2022&lt;/a> progress reports were released, featuring &lt;a href="https://www.reddit.com/r/Zig/comments/vc1q2g/crossplatform_physics_demosandbox/">a cross-platform physics demo/sandbox&lt;/a>, &lt;a href="https://www.reddit.com/r/Zig/comments/utunok/ziggamedev_new_crossplatform_sample_application/">a cross-platform PBR &amp;amp; IBL sample&lt;/a>, and new libraries for model loading, GUI, and audio - a great set of bindings for popular C libraries like imgui and mini-audio.&lt;/li>
+&lt;li>Mach engine&amp;rsquo;s &lt;a href="https://github.com/hexops/mach/issues/355">v0.2 roadmap&lt;/a> was published, and we began planning &lt;a href="https://twitter.com/slimsag/status/1536189712821456897">the high-level application API&lt;/a>, ECS type safety, audio systems, WebAssebmly support &amp;amp; more.&lt;/li>
+&lt;/ul>
+&lt;h1 id="changes-to-zigmonthly">Changes to zigmonthly&lt;/h1>
+&lt;p>As demands on my time and motivation shift over time, publishing zigmonthly on a regular cadence is.. challenging, to say the least.&lt;/p>
+&lt;ul>
+&lt;li>I work 40-60 hours a week &lt;a href="https://about.sourcegraph.com">at a 200+ person startup&lt;/a> directly reporting to the CTO, during tricky economic times.&lt;/li>
+&lt;li>I do my best to get 40+ solid hours a week into a life-long passion project: the &lt;a href="https://machengine.org/">Mach game engine&lt;/a>.&lt;/li>
+&lt;li>I take care of what could be described as a small cat shelter.&lt;/li>
+&lt;/ul>
+&lt;p>I believe something like Zigmonthly should exist. It should be more than just a link aggregator, it should be a community update crafted with care and love. Behind the scenes, this involves a &lt;em>lot&lt;/em> of work, and I haven&amp;rsquo;t always been true to that statement: (a) it&amp;rsquo;s not always clear when the best time to feature projects is, so I have to coordinate with project maintainers. Curating content and deciding if it&amp;rsquo;s representative of the quality we all want of Zig, and making the tough call of when to exclude something, while trying to acknowledge my biases - is all very time consuming and challenging.&lt;/p>
+&lt;p>I do this work because nobody else is, and I want something like zigmonthly to exist for the community.&lt;/p>
+&lt;p>To make my life easier, and to improve the quality of zigmonthly, I&amp;rsquo;m adopting a bi-monthly schedule. Hopefully this gives me more time to focus on &lt;a href="https://machengine.org">Mach engine&lt;/a>, more weekends where I can sit down and prepare these to publish on time, and give me a better selection of the highest quality content from the Zig community to go into these articles. The next one will go out &lt;em>sometime&lt;/em> in September and cover July-Aug.&lt;/p>
+&lt;p>I&amp;rsquo;m also adopting a new format: orienting the articles more around &lt;em>new and highly-notable developments that should be highlighted&lt;/em>, rather than speaking so much about &lt;em>incremental developments to established projects&lt;/em> (excluding the Zig project itself.) I want these to be things that get people excited about what is going on in Zig, not a dump of links.&lt;/p>
+&lt;p>The idea is that if you have a new project, if you wrote a new application in Zig, etc. and you&amp;rsquo;d like everyone to be aware of it - then you can use zigmonthly to &amp;lsquo;launch&amp;rsquo; it to 600+ readers and build your own audience/community from that. Updates to established projects (like say Mach or zig-gamedev) will still be mentioned, they&amp;rsquo;ll just be footnotes briefly summarizing (and linking to) their own status reports.&lt;/p>
+&lt;h1 id="thanks-for-reading">Thanks for reading&lt;/h1>
+&lt;p>If you like my work, you can be one of the 9 people needed to &lt;a href="https://github.com/sponsors/slimsag">help me reach my goal of 50 sponsors on GitHub&lt;/a> and I&amp;rsquo;ll forever appreciate you.&lt;/p></description></item><item><title>Zig monthly, April 2022: OS interop, Graphics, WebAssembly, Talks, Wren language &amp; more</title><link>https://zigmonthly.org/letters/2022/april/</link><pubDate>Thu, 12 May 2022 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2022/april/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/168130228-0b0e9736-97fa-44d2-a020-896bb4aa6105.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/168130228-0b0e9736-97fa-44d2-a020-896bb4aa6105.png">&lt;/img>&lt;/a>&lt;/p>
 &lt;h1 id="nanovg-zig">nanovg-zig&lt;/h1>
 &lt;p>&lt;a href="https://github.com/fabioarnold">@fabioarnold&lt;/a> has released nanovg-zig:&lt;/p>
 &lt;blockquote>
@@ -768,5 +865,4 @@ for Burrito. I was involved, but it&amp;rsquo;s really their project.&amp;quot;&
 &lt;li>&lt;a href="https://corecursive.com/067-zig-with-andrew-kelley/">Full-Time Open Source With Andrew Kelley&lt;/a> (podcast, transcribed)&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;p>Enjoying Zig monthly? Please consider &lt;a href="https://github.com/sponsors/slimsag">supporting my work&lt;/a>&lt;/p></description></item><item><title/><link>https://zigmonthly.org/letters/2022/may/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zigmonthly.org/letters/2022/may/</guid><description>&lt;p>Continue starting at may 1st&lt;/p>
-&lt;p>&lt;a href="https://www.reddit.com/r/Zig/comments/uk1bnc/ui_engine_in_zig/">https://www.reddit.com/r/Zig/comments/uk1bnc/ui_engine_in_zig/&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>Enjoying Zig monthly? Please consider &lt;a href="https://github.com/sponsors/slimsag">supporting my work&lt;/a>&lt;/p></description></item></channel></rss>

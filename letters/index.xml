@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Letters on Zig monthly</title><link>https://zigmonthly.org/letters/</link><description>Recent content in Letters on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 04 Jul 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/letters/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig is becoming more production-worthy</title><link>https://zigmonthly.org/letters/2022/may-june/</link><pubDate>Mon, 04 Jul 2022 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2022/may-june/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/177217687-b47d897a-2516-4df8-b0df-de120552fc53.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/177217687-b47d897a-2516-4df8-b0df-de120552fc53.png">&lt;/img>&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Letters on Zig monthly</title><link>https://zigmonthly.org/letters/</link><description>Recent content in Letters on Zig monthly</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 04 Jul 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://zigmonthly.org/letters/index.xml" rel="self" type="application/rss+xml"/><item><title>Zig is becoming more production-worthy (zigmonthly)</title><link>https://zigmonthly.org/letters/2022/may-june/</link><pubDate>Mon, 04 Jul 2022 00:00:00 -0700</pubDate><guid>https://zigmonthly.org/letters/2022/may-june/</guid><description>&lt;p>&lt;a align="center" href="https://user-images.githubusercontent.com/3173176/177217687-b47d897a-2516-4df8-b0df-de120552fc53.png">&lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/177217687-b47d897a-2516-4df8-b0df-de120552fc53.png">&lt;/img>&lt;/a>&lt;/p>
 &lt;h1 id="how-zig-is-used-at-uber">How Zig is used at Uber&lt;/h1>
 &lt;a href="https://www.youtube.com/watch?v=SCj2J3HcEfc">
 &lt;img width="650px" src="https://user-images.githubusercontent.com/3173176/177207028-843df8cd-4638-487d-9916-997ac888295b.png">&lt;/img>
@@ -15,7 +15,7 @@
 &lt;p>&lt;a href="https://twitter.com/andy_kelley/status/1542667210602057728">&lt;img width="594" alt="image" src="https://user-images.githubusercontent.com/3173176/177212829-f859c9e0-7390-4689-8283-ca62e00cd7bf.png">&lt;/a>&lt;/p>
 &lt;p>The multi-year effort to switch away from Zig&amp;rsquo;s old stage1 C++ compiler to the new stage2 compiler written in Zig has really been progressing recently. (&lt;a href="https://github.com/ziglang/zig/issues/89">tracking issue #89&lt;/a>)&lt;/p>
 &lt;p>Although it&amp;rsquo;s not ready for prime time yet, and not advised to test with it yet as many bugs are already known, we&amp;rsquo;re already seeing &lt;a href="https://github.com/hexops/mach/issues/180">it can compile parts of some major projects with a bit of finangling&lt;/a>.&lt;/p>
-&lt;h3 id="heres-why-stage2-is-such-an-important-milestone">Here&amp;rsquo;s why stage2 is such an important milestone&lt;/h3>
+&lt;h2 id="heres-why-stage2-is-such-an-important-milestone">Here&amp;rsquo;s why stage2 is such an important milestone&lt;/h2>
 &lt;ul>
 &lt;li>Once the compiler is written in Zig, a large portion of the community that wouldn&amp;rsquo;t have been able/willing to dive into a C++ codebase before will now be able to help out.&lt;/li>
 &lt;li>It will fix &lt;em>numerous&lt;/em> known issues, especially around comptime - enabling some new interesting ways of using Zig metaprogramming.&lt;/li>
@@ -48,7 +48,7 @@
 &lt;li>Workshops&lt;/li>
 &lt;/ul>
 &lt;p>Full schedule will come out soon, and early bird pricing ends soon so &lt;a href="https://sycl.it/tickets">get your tickets now&lt;/a>!&lt;/p>
-&lt;h1 id="article-of-the-month-how-i-built-zig-sqlite">Article of the month: &amp;ldquo;How I built zig-sqlite&amp;rdquo;&lt;/h1>
+&lt;h1 id="article-of-the-month-how-i-built-zig-sqlite">Article of the month: How I built zig-sqlite&lt;/h1>
 &lt;p>&lt;a href="https://rischmann.fr/blog/how-i-built-zig-sqlite">&amp;ldquo;How I built zig-sqlite&amp;rdquo;&lt;/a> is an excellent read for anyone looking to get a better understanding of Zig&amp;rsquo;s C interoperability as well as its powerful meta-programming capabilities.&lt;/p>
 &lt;h1 id="cosmic-jswasm-runtime-developments">Cosmic JS/WASM runtime developments&lt;/h1>
 &lt;video align="center" width="650px" src="https://user-images.githubusercontent.com/3173176/177211171-f3e875a8-d4be-45b4-b6ca-dde75dbd7f15.mp4" controls="controls" muted="muted">
